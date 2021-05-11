@@ -1,0 +1,36 @@
+    2  ./run
+    3  vi dowhiletest.c
+    4  cc dowhiletest.c -o run
+    5  ./run 
+    6  vi whiletest.c
+    7  cc whiletest.c -o run
+    8  vi whiletest.c
+    9  cc whiletest.c -o run
+   10  vi whiletest.c
+   11  cc whiletest.c -o run
+   12  ./run
+   13  vi whiletest.c
+   14  cc whiletest.c -o run
+   15  ./run
+   16  vi fortest.cpp
+   17  vi namespctest.cpp 
+   18  vi fortest.cpp
+   19  vi namespctest.cpp 
+   20  vi fortest.cpp
+   21  c++ fortest.cpp -o run
+   22  ./run 
+   23  vi fortest.cpp
+   24  c++ fortest.cpp -o run
+   25  ./run 
+   26  cd ..
+   27  mkdir Procedures
+   28  cd Procedures/
+   29  cp ../Basics/console.i .
+   30  cp ../Basics/system.o .
+   31  cp ../Basics/jumptest.s calltest.s
+   32  vi calltest.s 
+   33  as calltest.s 
+   34  ld a.out system.o -o run
+   35  ./run 
+   36  vi calltest.s 
+   37  history > cmd05.txt
