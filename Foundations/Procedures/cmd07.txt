@@ -1,0 +1,47 @@
+    2  vi ptrargtest.c 
+    3  vi funcptrtest.c
+    4  vi ../Basics/dowhiletest.c 
+    5  vi funcptrtest.c
+    6  cc funcptrtest.c -o run
+    7  ./run 
+    8  vi funcptrtest.c
+    9  cc funcptrtest.c -o run
+   10  ./run 
+   11  vi funcptrtest.c
+   12  cc funcptrtest.c -o run
+   13  ./run 
+   14  vi funcptrtest.c
+   15  cc funcptrtest.c -o run
+   16  ./run 
+   17  vi funcptrtest.c
+   18  cc funcptrtest.c -o run
+   19  ./run 
+   20  vi funcptrtest.c
+   21  cc funcptrtest.c -o run
+   22  ./run 
+   23  vi funcptrtest.c
+   24  cc funcptrtest.c -o run
+   25  vi funcptrtest.c
+   26  cp funcovldtest.cpp trycatchtest.cpp
+   27  vi trycatchtest.cpp 
+   28  c++ trycatchtest.cpp -o run
+   29  ./run 
+   30  vi trycatchtest.cpp 
+   31  ./run 
+   32  vi trycatchtest.cpp 
+   33  c++ trycatchtest.cpp -o run
+   34  ./run 
+   35  vi trycatchtest.cpp 
+   36  c++ trycatchtest.cpp -o run
+   37  ./run 
+   38  vi trycatchtest.cpp 
+   39  c++ trycatchtest.cpp -o run
+   40  ./run 
+   41  vi trycatchtest.cpp 
+   42  c++ trycatchtest.cpp -o run
+   43  ./run 
+   44  vi trycatchtest.cpp 
+   45  c++ trycatchtest.cpp -o run
+   46  ./run 
+   47  vi trycatchtest.cpp 
+   48  history > cmd07.txt
