@@ -1,0 +1,39 @@
+    2  vi calltest.s 
+    3  vi gcd.s
+    4  as gcd.s -o gcd.o
+    5  vi gcd.s
+    6  vi externtest1.c
+    7  cc externtest1.c -o run
+    8  cc externtest1.c gcd.o -o run
+    9  ./run 
+   10  vi externtest1.c
+   11  scp externtest1.c hb@ubuntupi.lan:Testing
+   12  ssh hb@ubuntupi.lan
+   13  scp hb@ubuntupi.lan:Testing/gcd.s gcd_a64.s
+   14  vi
+   15  ls
+   16  vi gcd_a64.s 
+   17  vi primes.c
+   18  objdump -t gcd.o
+   19  cc primes.c 
+   20  cc -c primes.c 
+   21  ls
+   22  objdump -t primes.o
+   23  cc primes.c 
+   24  vi primes.c
+   25  cc -c primes.c 
+   26  objdump -t primes.o
+   27  vi primes.c
+   28  vi externtest2.c 
+   29  cc externtest2.c primes.o -o run
+   30  ./run
+   31  vi externtest2.c 
+   32  cc externtest2.c primes.o -o run
+   33  ./run
+   34  vi externtest2.c 
+   35  cc externtest2.c primes.o -o run
+   36  ./run
+   37  vi externtest2.c 
+   38  cc externtest2.c primes.o -o run
+   39  ./run
+   40  history > cmd08.txt
