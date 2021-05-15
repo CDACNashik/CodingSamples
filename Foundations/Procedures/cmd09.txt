@@ -1,0 +1,36 @@
+    2  vi externctest.cpp
+    3  c++ externctest.cpp -o run
+    4  c++ externctest.cpp primes.o -o run
+    5  cc extertest2.c -o run
+    6  cc externtest2.c -o run
+    7  cc externtest2.c primes.o -o run
+    8  vi externctest.cpp
+    9  objdump -t primes.o
+   10  cp primes.c primes.cpp
+   11  c++ -c primes.cpp
+   12  objdump -t primes.o
+   13  c++ externctest.cpp primes.o -o run
+   14  ./run
+   15  rm primes.cpp
+   16  cc -c primes.c
+   17  c++ externctest.cpp primes.o -o run
+   18  vi externctest.cpp 
+   19  c++ externctest.cpp primes.o -o run
+   20  ./run 
+   21  vi externtest1.c
+   22  cc -shared primes.c -o libprimes.so
+   23  ls
+   24  vi dynlnktest.py
+   25  python3 dynlnktest.py 
+   26  vi dynlnktest.py
+   27  rm primes.o
+   28  ./run 
+   29  python dynlnktest.py 
+   30  c++ externctest.cpp -L. -lprimes -o run
+   31  ./run 
+   32  export LD_LIBRARY_PATH=.
+   33  ./run 
+   34  vi dynlnktest.py 
+   35  vi  gcd.s
+   36  as gcd.s -o gcd.o
+   37  ld -shared gcd.o -o libgcd.so
