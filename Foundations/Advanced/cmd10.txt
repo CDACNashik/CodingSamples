@@ -1,0 +1,61 @@
+    3  vi banner.c
+    4  cc -c banner.c 
+    5  vi banner.c
+    6  cc -c banner.c 
+    7  vi banner.h
+    8  vi banner.c
+    9  cc -c banner.c 
+   10  vi banner.c
+   11  cc -c banner.c 
+   12  vi banner.c
+   13  cc -c banner.c 
+   14  vi udttest.c
+   15  ls
+   16  ls /usr/include/
+   17  vi udttest.c
+   18  cc udttest.c banner.o -o run
+   19  ./run 
+   20  vi banner.h
+   21  cc -c banner.c 
+   22  vi banner.c
+   23  cc -c banner.c 
+   24  vi udttest.c
+   25  cc udttest.c banner.o -o run
+   26  ./run 
+   27  vi udttest.c
+   28  vi banner.h
+   29  vi banner.c
+   30  cc -c banner.c 
+   31  vi udttest.c 
+   32  cc udttest.c banner.o -o run
+   33  ./run 
+   34  vi udttest.c 
+   35  cc udttest.c banner.o -o run
+   36  ./run 
+   37  vi banner.h
+   38  vi banner.c
+   39  vi udttest.c 
+   40  vi banner.h
+   41  vi banner.c
+   42  vi banner.h
+   43  vi banner.c
+   44  vi banner.h
+   45  vi banner.c
+   46  vi banner.h
+   47  vi banner.c
+   48  vi udttest.c 
+   49  vi banner.c
+   50  vi banner.h
+   51  cc -c banner.c
+   52  vi banner.c
+   53  cc -c banner.c
+   54  vi banner.c
+   55  vi banner.h
+   56  cc -c banner.c
+   57  vi banner.c
+   58  vi banner.h
+   59  cc -c banner.c
+   60  vi udttest.c 
+   61  cc udttest.c banner.o -o run
+   62  ./run 
+   63  history > cmd10.txt
