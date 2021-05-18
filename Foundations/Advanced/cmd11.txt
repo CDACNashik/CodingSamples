@@ -1,0 +1,46 @@
+    3  vi banner.c
+    4  vi classtest1.cpp
+    5  c++ classtest1.cpp -o run
+    6  ./run 
+    7  vi classtest1.cpp
+    8  c++ classtest1.cpp -o run
+    9  vi classtest1.cpp
+   10  c++ classtest1.cpp -o run
+   11  ./run 
+   12  vi classtest1.cpp
+   13  c++ classtest1.cpp -o run
+   14  ./run 
+   15  vi classtest1.cpp
+   16  cp classtest1.cpp classtest2.cpp
+   17  vi classtest2.cpp 
+   18  c++ classtest2.cpp -o run
+   19  ./run
+   20  vi classtest2.cpp 
+   21  c++ classtest2.cpp -o run
+   22  ./run
+   23  vi classtest2.cpp 
+   24  vi classtest1.cpp
+   25  vi classtest2.cpp 
+   26  c++ classtest2.cpp -o run
+   27  vi classtest2.cpp 
+   28  cp classtest2.cpp reftypetest.cpp
+   29  vi reftypetest.cpp 
+   30  c++ reftypetest.cpp -o run
+   31  ./run
+   32  vi reftypetest.cpp 
+   33  c++ reftypetest.cpp -o run
+   34  ./run
+   35  vi reftypetest.cpp 
+   36  c++ reftypetest.cpp -o run
+   37  ./run
+   38  vi reftypetest.cpp 
+   39  c++ reftypetest.cpp -o run
+   40  ./run
+   41  vi reftypetest.cpp 
+   42  c++ reftypetest.cpp -o run
+   43  ./run
+   44  vi reftypetest.cpp 
+   45  c++ reftypetest.cpp -o run
+   46  ./run
+   47  vi reftypetest.cpp 
+   48  history > cmd11.txt
