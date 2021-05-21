@@ -1,0 +1,84 @@
+    3  cp series1.h series2.h
+    4  cp series2.cpp series2.cpp
+    5  cp series1.cpp series2.cpp
+    6  vi series2.h
+    7  c++ -c series2.cpp 
+    8  cp subtypetest1.cpp subtypetest2.cpp 
+    9  vi subtypetest2.cpp 
+   10  vi series2.h
+   11  c++ -c series2.cpp 
+   12  vi subtypetest2.cpp 
+   13  c++ subtypetest2.cpp series2.o -o run
+   14  ./run 
+   15  vi subtypetest2.cpp 
+   16  c++ -c series2.cpp 
+   17  c++ subtypetest2.cpp series2.o -o run
+   18  ./run 
+   19  vi subtypetest2.cpp 
+   20  vi series2.h
+   21  c++ -c series2.cpp 
+   22  c++ subtypetest2.cpp series2.o -o run
+   23  ./run 
+   24  vi subtypetest2.cpp 
+   25  c++ -c series1.cpp
+   26  c++ subtypetest1.cpp series1.o -o run
+   27  ./run
+   28  vi series1.h
+   29  c++ -c series1.cpp
+   30  c++ subtypetest1.cpp series1.o -o run
+   31  ./run
+   32  vi series1.h
+   33  vi subtypetest2.cpp 
+   34  vo series2.cpp 
+   35  vi series2.cpp 
+   36  vi series2.h
+   37  c++ -c series2.cpp 
+   38  c++ subtypetest2.cpp series2.o -o run
+   39  ./run
+   40  vi series2.h
+   41  c++ -c series2.cpp 
+   42  c++ subtypetest2.cpp series2.o -o run
+   43  ./run
+   44  vi subtypetest2.cpp 
+   45  c++ subtypetest2.cpp series2.o -o run
+   46  ./run
+   47  vi subtypetest2.cpp 
+   48  vi series2.h
+   49  c++ -c series2.cpp
+   50  c++ subtypetest2.cpp series2.o -o run
+   51  vi subtypetest2.cpp 
+   52  c++ subtypetest2.cpp series2.o -o run
+   53  ./run 
+   54  vi series2.h
+   55  vi subtypetest2.cpp 
+   56  c++ subtypetest2.cpp series2.o -o run
+   57  vi subtypetest2.cpp 
+   58  c++ subtypetest2.cpp series2.o -o run
+   59  ./run 
+   60  vi series2.h
+   61  vi series2.cpp 
+   62  c++ -c series2.cpp 
+   63  vi subtypetest2.cpp 
+   64  vi series2.h
+   65  vi subtypetest2.cpp 
+   66  c++ subtypetest2.cpp series2.o -o run
+   67  ./run 
+   68  vi subtypetest2.cpp 
+   69  vi series2.cpp 
+   70  vi subtypetest2.cpp 
+   71  c++ subtypetest2.cpp series2.o -o run
+   72  ./run 
+   73  vi subtypetest2.cpp 
+   74  c++ subtypetest2.cpp series2.o -o run
+   75  ./run 
+   76  vi subtypetest2.cpp 
+   77  vi series2.h
+   78  vi subtypetest2.cpp 
+   79  vi series2.h
+   80  vi series2.cpp 
+   81  vi subtypetest2.cpp 
+   82  vi series2.h
+   83  vi subtypetest2.cpp 
+   84  vi subtypetest1.cpp 
+   85  vi series2.h
+   86  history > cmd14.txt 
