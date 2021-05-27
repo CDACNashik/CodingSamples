@@ -1,0 +1,51 @@
+    3  vi Hello.java
+    4  javac Hello.java 
+    5  ls
+    6  vi Hello.java
+    7  vi Greeter.class
+    8  java Greeter
+    9  ls
+   10  java X
+   11  vi Hello.java
+   12  uname -m
+   13  vi Hello.java
+   14  javac Hello.java 
+   15  java Greeter
+   16  java Greeter Jack Jill John Jeff
+   17  vi Hello.java
+   18  java Greeter Jack and Jill John Jeff
+   19  java Greeter "Jack and Jill" John Jeff
+   20  vi Hello.java
+   21  scp Greeter.class hb@ubuntupi.lan:Testing
+   22  ssh hb@ubuntupi.lan:Testing
+   23  ssh hb@ubuntupi.lan
+   24  uname -m
+   25  ssh hb@ubuntupi.lan
+   26  ping ubuntupi.lan
+   27  ssh hb@ubuntupi.lan
+   28  ls
+   29  vi MethodTest1.java
+   30  javac MethodTest1.java 
+   31  ls
+   32  java MethodTest1
+   33  vi MethodTest1.java
+   34  javac MethodTest1.java 
+   35  vi MethodTest1.java
+   36  javac MethodTest1.java 
+   37  java MethodTest1
+   38  vi MethodTest1.java
+   39  vi MethodTest2.java
+   40  javac MethodTest2.java
+   41  java MethodTest2 75000 4
+   42  vi MethodTest2.java
+   43  javac MethodTest2.java
+   44  java MethodTest2 75000 4
+   45  javac MethodTest2.java
+   46  vi MethodTest2.java
+   47  javac MethodTest2.java
+   48  vi MethodTest2.java
+   49  javac MethodTest2.java
+   50  java MethodTest2 75000 4
+   51  vi MethodTest2.java
+   52  ssh dac53@cdaclab.bkc.met.edu
+   53  history > cmd0527.txt
