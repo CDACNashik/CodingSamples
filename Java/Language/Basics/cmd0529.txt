@@ -1,0 +1,56 @@
+    7  vi MethodTest2.java 
+    8  vi ClassTest.java
+    9  javac ClassTest.java 
+   10  vi ClassTest.java
+   11  javac ClassTest.java 
+   12  java ClassTest 75000 4
+   13  cp ClassTest.java EnumTest.java
+   14  vi EnumTest.java 
+   15  javac EnumTest.java 
+   16  java EnumTest 75000 4
+   17  vi EnumTest.java 
+   18  javac EnumTest.java 
+   19  java EnumTest 75000 4
+   20  vi EnumTest.java 
+   21  vi MethodTest2.java 
+   22  vi EnumTest.java 
+   23  cp EnumTest.java ExceptionTest.java
+   24  vi ExceptionTest.java `
+   25  vi ExceptionTest.java
+   26  javac ExceptionTest.java 
+   27  java ExceptionTest 75000 4
+   28  java ExceptionTest 75000
+   29  java ExceptionTest
+   30  vi ExceptionTest.java
+   31  javac ExceptionTest.java 
+   32  java ExceptionTest 75000
+   33  java ExceptionTest
+   34  java ExceptionTest 50000 1O
+   35  vi ExceptionTest.java
+   36  javac ExceptionTest.java 
+   37  java ExceptionTest 75000 4
+   38  java ExceptionTest 75000
+   39  java ExceptionTest 50000 1O
+   40  vi ExceptionTest.java
+   41  javac ExceptionTest.java 
+   42  java ExceptionTest 75000 4
+   43  java ExceptionTest 75000
+   44  java ExceptionTest 50000 1O
+   45  java ExceptionTest 7500 3
+   46  vi ExceptionTest.java
+   47  javac ExceptionTest.java 
+   48  java ExceptionTest 75000 4
+   49  java ExceptionTest 75000
+   50  java ExceptionTest 50000 1O
+   51  java ExceptionTest 7500 3
+   52  vi ExceptionTest.java
+   53  javac ExceptionTest.java 
+   54  java ExceptionTest 75000 4
+   55  java ExceptionTest 75000
+   56  java ExceptionTest 50000 1O
+   57  java ExceptionTest 5000 4
+   58  vi ExceptionTest.java
+   59  ls
+   60  ll -ltr
+   61  ll -ltr *.java
+   62  history > cmd0529.txt 
