@@ -1,0 +1,21 @@
+    3  ls
+    4  java ExceptionTest 40000 5
+    5  rm ExceptionTest.class 
+    6  java ExceptionTest 40000 5
+    7  vi Hello.java 
+    8  javac Hello.java 
+    9  vi Hello.java 
+   10  javac Hello.java 
+   11  vi Hello.java 
+   12  vi ClassTest.java 
+   13  mkdir src
+   14* javac -d  src/Employee.java
+   15  vi src/Employee.java 
+   16  javac -d . src/Employee.java 
+   17  ls
+   18  javac -d . src/Employee.java 
+   19  vi src/SalesPerson.java
+   20  javac -d . src/SalesPerson.java 
+   21  ls src/
+   22  ls payroll/
+   23  history > cmd0531.txt
