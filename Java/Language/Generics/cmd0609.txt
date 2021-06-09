@@ -1,0 +1,45 @@
+    1  cp SetTest.java MapTest.java
+    2  vi MapTest.java 
+    3  javac MapTest.java 
+    4  vi MapTest.java 
+    5  javac MapTest.java 
+    6  java MapTest
+    7  vi MapTest.java 
+    8  javac MapTest.java 
+    9  java MapTest
+   10  vi MapTest.java 
+   11  javac MapTest.java 
+   12  java MapTest
+   13  cd ..
+   14  mkdir Advanced
+   15  cd Advanced/
+   16  vi ../../../Foundations/Procedures/funcptrtest.c 
+   17  vi MethodRefTest.java
+   18  javap java.lang.Runnable
+   19  javap java.lang.Iterable
+   20  javap java.util.Iterator
+   21  vi MethodRefTest.java
+   22  javac MethodRefTest.java
+   23  vi MethodRefTest.java
+   24  java MethodRefTest
+   25  vi MethodRefTest.java
+   26  javac MethodRefTest.java
+   27  vi MethodRefTest.java
+   28  javac MethodRefTest.java
+   29  vi MethodRefTest.java
+   30  javac MethodRefTest.java
+   31  vi MethodRefTest.java
+   32  javac MethodRefTest.java
+   33  vi MethodRefTest.java
+   34  javac MethodRefTest.java
+   35  java MethodRefTest
+   36  vi MethodRefTest.java
+   37  cp MethodRefTest.java LambdaExprTest.java
+   38  vi LambdaExprTest.java 
+   39  javac LambdaExprTest.java 
+   40  java LambdaExprTest
+   41  javap -p LambdaExprTest
+   42  vi LambdaExprTest.java 
+   43  vi MethodRefTest.java 
+   44  vi LambdaExprTest.java 
+   45  history > cmd0609.txt
