@@ -1,0 +1,55 @@
+    2  vi ../Basics/AbstractClassTest.java 
+    3  vi ../Basics/src/Account.java 
+    4  vi ../Basics/AbstractClassTest.java 
+    5  vi ../Basics/src/Account.java 
+    6  mkdir src
+    7  vi src/EducationLoan.java
+    8  vi src/PersonalLoan.java
+    9  vi src/HomeLoan.java
+   10  javac -d . src/*.java
+   11  ls finance/
+   12  vi ReflectionTest2.java 
+   13  javap finance.PersonalLoan
+   14  vi ReflectionTest2.java 
+   15  javac ReflectionTest2.java 
+   16  java ReflectionTest2 500000 finance.EducationLoan common
+   17  java ReflectionTest2 500000 finance.HomeLoan woman
+   18  java ReflectionTest2 500000 finance.HomeLoan common
+   19  java ReflectionTest2 500000 finance.PersonalLoan common
+   20  java ReflectionTest2 500000 finance.PersonalLoan employee
+   21  vi ReflectionTest2.java 
+   22  java ReflectionTest2 500000 finance.CarLoan employee
+   23  vi ReflectionTest2.java 
+   24  vi src/HomeLoan.java 
+   25  vi ReflectionTest2.java 
+   26  java ReflectionTest2 500000 finance.PersonalLoan woman
+   27  java ReflectionTest2 500000 finance.PersonalLoan employee
+   28  vi ReflectionTest2.java 
+   29  javap java.lang.reflect.Method
+   30  vi ReflectionTest2.java 
+   31  vi src/MaxDuration.java
+   32  javac -d . src/MaxDuration.java
+   33  vi src/PersonalLoan.java 
+   34  javac -d . src/PersonalLoan.java 
+   35  vi src/HomeLoan.java 
+   36  javac -d . src/HomeLoan.java 
+   37  vi src/MaxDuration.java 
+   38  javac -d . src/MaxDuration.java 
+   39  javac -d . src/PersonalLoan.java
+   40  javac -d . src/HomeLoan.java 
+   41  vi src/HomeLoan.java 
+   42  javac -d . src/HomeLoan.java 
+   43  vi src/MaxDuration.java 
+   44  javac -d . src/*.java
+   45  vi src/PersonalLoan.java 
+   46  cp ReflectionTest2.java AnnotationTest.java
+   47  vi AnnotationTest.java 
+   48  javac AnnotationTest.java 
+   49  java AnnotationTest 500000 finance.EducationLoan common
+   50  java AnnotationTest 500000 finance.PersonalLoan common
+   51  java AnnotationTest 500000 finance.HomeLoan common
+   52  vi src/MaxDuration.java 
+   53  vi src/PersonalLoan.java 
+   54  vi src/HomeLoan.java 
+   55  vi AnnotationTest.java 
+   56  history > cmd0611.txt
