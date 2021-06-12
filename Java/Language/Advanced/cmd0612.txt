@@ -1,0 +1,56 @@
+    2  cp ../Basics/InterfaceTest2.class .
+    3  javap -c InterfaceTest2
+    4  q
+    5  cp ../Basics/InterfaceTest1.class .
+    6  rm InterfaceTest2.class 
+    7  javap -c InterfaceTest1
+    8  java InterfaceTest1
+    9  ls
+   10  java -cp .:../Basics/ InterfaceTest1
+   11  java InterfaceTest1
+   12  java -cp .:../Basics/ InterfaceTest1
+   13  export CLASSPATH=.:../Basics/
+   14  java InterfaceTest1
+   15  unset CLASSPATH
+   16  java InterfaceTest1
+   17  java -cp .:../Basics/ InterfaceTest1
+   18  jar -c -f bank.jar -C ../Basics/ banking
+   19  ls
+   20  java InterfaceTest1
+   21  ls
+   22  java -cp .:bank.jar InterfaceTest1
+   23  jar -t -f bank.jar 
+   24  export CLASSPATH=.:bank.jar
+   25  java InterfaceTest1
+   26  unset CLASSPATH
+   27  vi ift.sh
+   28  chmod ift.sh 
+   29  chmod u+x ift.sh 
+   30  ./ift.sh 
+   31  vi ift.sh
+   32  vi NativeMethodTest1.java
+   33  javac -h . NativeMethodTest1.java 
+   34  ls
+   35  vi NativeMethodTest1.h
+   36  vi nmtsup.cpp
+   37  c++ -shared -fPIC nmtsup.cpp -o libnmtsup.so
+   38  export CPATH=/opt/jdk-16.0.1/include/:/opt/jdk-16.0.1/include/linux/
+   39  c++ -shared -fPIC nmtsup.cpp -o libnmtsup.so
+   40  ls
+   41  java NativeMethodTest1 gcd 48 120
+   42  ls NativeMethodTest1.java 
+   43  vi NativeMethodTest1.java 
+   44  java -Djava.library.path=. NativeMethodTest1 gcd 48 120
+   45  export LD_LIBRARY_PATH=.
+   46  java NativeMethodTest1 gcd 48 120
+   47  vi NativeMethodTest1.java 
+   48  javac -h . NativeMethodTest1.java 
+   49  vi NativeMethodTest1.h
+   50  vi nmtsup.cpp 
+   51  c++ -shared  nmtsup.cpp -o libnmtsup.so
+   52  c++ -shared -fPIC  nmtsup.cpp -o libnmtsup.so
+   53  java -Djava.library.path=. NativeMethodTest1 gcd 48 120
+   54  java NativeMethodTest1 gcd 48 120
+   55  java NativeMethodTest1 gcd 4995 5994
+   56  vi nmtsup.cpp 
+   57  history > cmd0612.txt
