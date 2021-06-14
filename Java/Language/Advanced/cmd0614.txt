@@ -1,0 +1,46 @@
+    6  export CPATH=/opt/jdk-16.0.1/include/:/opt/jdk-16.0.1/include/linux/
+    7  export LD_LIBRARY_PATH=.
+    8  java NativeMethodTest1 gcd 24 36
+    9  vi NativeMethodTest1.java 
+   10  javac -h . NativeMethodTest1.java 
+   11  vi NativeMethodTest1.h
+   12  vi nmtsup.cpp 
+   13  c++ -shared -fPIC nmtsup.cpp -o libnmtsup.so
+   14  vi nmtsup.cpp 
+   15  c++ -shared  nmtsup.cpp -o libnmtsup.so
+   16  c++ -shared -fPIC nmtsup.cpp -o libnmtsup.so
+   17  java NativeMethodTest1 reverse monday
+   18  java NativeMethodTest1 reverse MoNdAy
+   19  vi NativeMethodTest1.h
+   20  vi NativeMethodTest1.java 
+   21  javac -h . NativeMethodTest1.java 
+   22  vi NativeMethodTest1.h
+   23  vi nmtsup.cpp 
+   24  c++ -shared -fPIC nmtsup.cpp -o libnmtsup.so
+   25  java NativeMethodTest1 square 1.1 1.2 1.3 1.4
+   26  vi nmtsup.cpp 
+   27  vi taxation.h 
+   28  ls taxation.*
+   29  vi TaxPayerBridge.java
+   30  javac -h . TaxPayerBridge.java 
+   31  vi TaxPayerBridge.java
+   32  javac -h . TaxPayerBridge.java 
+   33  vi TaxPayerBridge.h
+   34  javap -p -s TaxPayerBridge
+   35  vi TaxPayerBridge.h
+   36  vi tpbsup.cpp
+   37  vi TaxPayerBridge.java
+   38  vi tpbsup.cpp
+   39  vi TaxPayerBridge.java
+   40  vi tpbsup.cpp
+   41  vi TaxPayerBridge.java
+   42  vi tpbsup.cpp
+   43  c++ -shared -fPIC tpbsup.cpp taxation.o -o libtpbsup.so
+   44  vi NativeMethodTest2.java
+   45  javac NativeMethodTest2.java 
+   46  java NativeMethodTest2 500000 31
+   47  java NativeMethodTest2 500000 62
+   48  java NativeMethodTest2 500000 83
+   49  java NativeMethodTest2 500000 7
+   50  vi tpbsup.cpp
+   51  history > cmd0614.txt
