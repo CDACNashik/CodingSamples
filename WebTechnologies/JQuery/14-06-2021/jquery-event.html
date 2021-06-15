@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<button>ENTER</button>
+	<input type="text" class="txt" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		//jquery events
+		$(document).ready(function(){
+			// console.log( $("button") );
+
+			$("button").click(function(){
+				console.log('test')
+			});
+
+			$('.txt').focus(function(){
+				console.log(Math.random()); // 0 and 1
+			});
+		});
+	</script>
+</body>
+</html>
+
+
+
+
+

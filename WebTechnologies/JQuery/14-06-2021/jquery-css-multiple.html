@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="para">TEST</p>
+	<p id="para">TEST</p>
+	<p id="para">TEST</p>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			console.log( $('#para') );
+			// $('#para').css('border','solid');
+			// $('#para').css('background','gray');
+			// $('#para').css('text-align','center');
+
+			$('#para').css({
+				'border':"solid",
+				'background':'#567',
+				'text-align':'center',
+				'text-transform':'uppercase'
+			});
+		});	
+	</script>
+</body>
+</html>

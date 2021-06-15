@@ -1,0 +1,25 @@
+
+<ul>
+	<li>HELLO WORLD</li>
+	<li>HELLO WORLD</li>
+	<li>HELLO WORLD</li>
+	<li class="test">HELLO WORLD HELLo</li>
+	<li>HELLO WORLD</li>
+	<li>HELLO WORLD</li>
+	<li>HELLO WORLD</li>
+</ul>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		jQuery(".test").click(function(){
+			// console.log(Math.PI);
+			// console.log(jQuery(this));
+			jQuery(this).css("background","gray");
+			jQuery(this).next().css("background","green");
+			jQuery(this).prev().css("background","red");
+		});
+	})
+</script>
+<!-- node js , react , angular , vue js , Ajax , JSON -->

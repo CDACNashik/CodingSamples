@@ -1,0 +1,59 @@
+<!-- GNU , GPL -->
+<!-- hide , show , toggle -->
+<button id="btn1">Hide P</button>
+<button id="btn2">Show P</button>
+<button id="btn3">Hide/Show P</button>
+
+<p style="border:solid;">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		// console.log('ready ')
+		$('#btn1').click(function(){
+			// console.log('working');
+			// $('p').css('display','none');
+
+			// $('p').hide();
+			// $("p").slideUp(3000);
+			$("p").fadeOut(3000);
+		});
+		/////
+		$("#btn2").click(function(){
+			// $('p').show();
+			// $('p').slideDown(3000);
+			$('p').fadeIn(3000);
+		});
+		/////
+		$("#btn3").click(function(){
+			// $("p").toggle();
+			// $("p").slideToggle(3000);
+			$("p").fadeToggle(3000);
+		});
+		///
+	});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
