@@ -1,0 +1,14 @@
+<p>10</p>
+<script type="text/javascript">
+	count=10;
+	ans = setInterval(function(){
+		if(count>=0){
+			document.querySelector("p").innerHTML=count;
+			count--;
+		}
+		else{
+			// window.location.href= "http://www.google.com"
+			clearInterval(ans);
+		}
+	} , 1000);
+</script>

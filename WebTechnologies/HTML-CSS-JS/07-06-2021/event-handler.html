@@ -1,0 +1,19 @@
+<button id="btn">Enter</button>
+
+<p class ="para">HELLO</p>
+<p class ="para">HELLO</p>
+
+<script type="text/javascript">
+	//event handler onclick
+	document.getElementById('btn').onclick=function(){
+		console.log('test1')
+	}
+	//event handler onclick
+	document.getElementById('btn').onclick=function(){
+		console.log('test2');
+		// console.log( document.querySelector('.para') );
+		console.log( document.querySelectorAll('.para') );
+		document.querySelectorAll('.para')[0].innerText=900;
+		document.querySelectorAll('.para')[1].style.border="solid";
+	}
+</script>

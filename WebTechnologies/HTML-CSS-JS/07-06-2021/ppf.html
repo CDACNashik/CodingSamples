@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+<body>
+	<div class="container">
+		<form>
+		  <div class="mb-3">
+		    <label for="exampleInputEmail1" class="form-label">Amount</label>
+		    <input type="text" class="form-control" id="amt" aria-describedby="emailHelp" placeholder="150000">
+		    
+		  </div>
+		  <div class="mb-3">
+		    <label for="exampleInputPassword1" class="form-label">Interest</label>
+		    <input type="text" class="form-control" id="int" placeholder="7.1 in %">
+		  </div>
+
+		  <div class="mb-3">
+		    <label for="exampleInputPassword1" class="form-label">Years</label>
+		    <select class="form-control" id="year">
+		    	<option>10</option>
+		    	<option>15</option>
+		    	<option>20</option>
+		    </select>
+		  </div>
+		  
+		  <button type="button" id="btn" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+	<script type="text/javascript" src="ppf.js"></script>
+</body>
+</html>

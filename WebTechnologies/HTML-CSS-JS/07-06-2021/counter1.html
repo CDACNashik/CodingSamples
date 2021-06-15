@@ -1,0 +1,19 @@
+<p>10</p>
+<script type="text/javascript">
+	count=10;
+	//refer a function
+	ans = setInterval( myfunc , 1000);
+	//1000ms
+	// 1 = 60*1000
+
+	function myfunc(){
+		if(count>=0){
+			document.querySelector("p").innerHTML=count;
+			count--;
+		}
+		else{
+			// window.location.href= "http://www.google.com"
+			clearInterval(ans);
+		}
+	}
+</script>

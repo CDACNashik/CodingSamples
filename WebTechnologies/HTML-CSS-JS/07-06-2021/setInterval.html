@@ -1,0 +1,9 @@
+<h1>test</h1>
+<script type="text/javascript">
+	setInterval( function(){
+		rec = new Date();
+		document.querySelector('h1').innerHTML = `
+			${rec.getHours()}:${rec.getMinutes()}:${rec.getSeconds()}
+		`
+	}, 1000 );
+</script>
