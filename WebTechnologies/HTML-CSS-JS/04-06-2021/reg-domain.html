@@ -1,0 +1,22 @@
+<input type="text" id="domainName" placeholder="gmail.com" value="" />
+<input type="button" value="Validate" onclick="myfunc()">
+<p></p>
+
+<script type="text/javascript">
+	// (gmail).(com)
+	// (google).(co)(.in)?
+	// gooogle.in.net
+	// gooogle.in
+	// 99acres.com
+	// in.com
+	// ask-to-resolve.com
+	function myfunc(){
+		text_data = document.getElementById('domainName').value
+		console.log(text_data);
+
+		reg_domain = /^([a-zA-Z0-9]([a-zA-Z0-9\-]{1,})?[a-zA-Z0-9])\.([a-zA-Z]{2,})(\.[a-zA-Z]{2,})?$/
+
+		ans = reg_domain.test(text_data)
+		console.log(ans)
+	}
+</script>

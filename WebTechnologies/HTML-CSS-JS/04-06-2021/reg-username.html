@@ -1,0 +1,29 @@
+<input type="text" id="username" placeholder="007akshay.patil" value="" />
+<input type="button" value="Validate" onclick="myfunc()">
+<p></p>
+
+<script type="text/javascript">
+	// username@gmail.com
+	// username@domain.extension
+	/*
+		akshay    @gmail.com
+		007akshay    @gmail.com
+		akshay.patil    @gmail.com
+		akshay.patil_123    @gmail.com
+		om    @gmail.com
+
+		if u r using special character as a normal character (in this example .) --- then use \ sign to escape special character
+
+	*/
+	function myfunc(){
+		txt_username = document.querySelector('#username').value;
+		console.log(txt_username)
+
+		//007akshay.patil_123
+		//om
+		reg_userName = /^[a-zA-Z0-9]([a-zA-Z0-9_\.]{1,})?[a-zA-Z0-9]$/
+
+		result = reg_userName.test(txt_username)
+		console.log(result);
+	}
+</script>

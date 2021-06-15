@@ -1,0 +1,61 @@
+<!-- regular expression using javascript -->
+
+<input type="text" class="userMobile" placeholder="9820092002">
+<input type="button" value="Validate" onclick="myfunc()">
+<p></p>
+
+<script type="text/javascript">
+	/*
+		// - delimiter or boundary
+		10 char
+
+		/[][][]...[]/
+		1 [] = 1 character
+		[0-9]
+		[a-z]
+		[a-zA-Z]
+		[0-9a-zA-Z]
+		[m-z]
+
+		^ - first character
+		9800980090
+		$ - last character
+		[] - tyep of character
+		{} - range of character
+	*/
+
+	
+
+	function myfunc(){
+
+		// querySelector() - id,class , tag name
+		// console.log(document.querySelector('.userMobile'))	
+		txt_mobile = document.querySelector('.userMobile').value;
+		console.log(txt_mobile);
+
+		// reg_mob = /^[1-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$/
+		reg_mob = /^[1-9][0-9]{9}$/
+
+		// [0-9]{9} - [0-9] total 9 times {} - range
+		// [0-9]{1,5} - [0-9] min 1 , max 5 time
+		// [0-9]{1,} - [0-9] min 1 , max infinite time (practical finite)
+
+
+		result = reg_mob.test(txt_mobile);
+		console.log(result); //true or false
+
+		if(result){
+			// console.log( document.querySelector('p') )
+			document.querySelector('p').innerText = 'valid';
+		}
+		else{
+			document.querySelector('p').innerText = 'Invalid';
+		}
+	}
+
+
+</script>
+
+
+
+

@@ -1,0 +1,20 @@
+<input type="text" id="userPincode" placeholder="400020" />
+<input type="button" value="Validate" onclick="myfunc()">
+<p></p>
+
+<script type="text/javascript">
+	function myfunc(){
+		txtPincode = document.querySelector('#userPincode').value
+		console.log(txtPincode);
+
+		reg_pincode = /^[1-9][0-9]{5}$/;
+		result = reg_pincode.test(txtPincode);
+		console.log(result);
+
+		para = document.querySelector('p')
+		console.log(para);
+
+		//ternary operator
+		para.innerText = (result)?'valid':'invalid';
+	}
+</script>

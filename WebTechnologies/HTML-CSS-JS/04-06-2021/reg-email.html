@@ -1,0 +1,21 @@
+<script type="text/javascript">
+	// username@domainname
+	// akshay.patil_123@gmail.co.in
+	//reg_userName = /^[a-zA-Z0-9]([a-zA-Z0-9_\.]{1,})?[a-zA-Z0-9]$/
+	//reg_domain = /^([a-zA-Z0-9]([a-zA-Z0-9\-]{1,})?[a-zA-Z0-9])\.([a-zA-Z]{2,})(\.[a-zA-Z]{2,})?$/
+
+	// userEmail = "akshay.patil_123@gmail.co.in";
+	// userEmail = "akshay.patil_123@gmail.co";
+	// userEmail = "akshay.patil_123gmail.co";
+	// userEmail = "akshay.patil_123@gmail.co.";
+	// userEmail = "akshay.patil_123@gmail.co.in";
+	// userEmail = "@gmail.co.in";
+	userEmail = "om@gmail.co.in";
+
+	// reg_Email = /^(username)@(domainname)$/
+	reg_Email = /^([a-zA-Z0-9]([a-zA-Z0-9_\.]{1,})?[a-zA-Z0-9])@(([a-zA-Z0-9]([a-zA-Z0-9\-]{1,})?[a-zA-Z0-9])\.([a-zA-Z]{2,})(\.[a-zA-Z]{2,})?)$/
+
+	result = reg_Email.test(userEmail);
+
+	console.log(result);
+</script>

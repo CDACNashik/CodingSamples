@@ -1,0 +1,17 @@
+<input type="text" id="pancard" placeholder="AAAAA7777B" value="" />
+<input type="button" value="Validate" onclick="myfunc()">
+<p></p>
+
+<script type="text/javascript">
+	function myfunc(){
+		text_pancard = document.querySelector("#pancard").value;
+		console.log(text_pancard);
+
+		reg_pancard = /^[a-zA-Z]{5}[0-9]{4}[a-zA-Z]$/
+
+		result = reg_pancard.test(text_pancard);
+		console.log(result);
+		
+		document.querySelector("p").innerHTML = (result)?"Valid":"Invalid";
+	}
+</script>

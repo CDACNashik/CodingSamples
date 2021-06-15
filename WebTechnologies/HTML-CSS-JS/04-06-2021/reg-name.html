@@ -1,0 +1,28 @@
+<input type="text" id="userName" placeholder="Amit Akshay Patil" value="" />
+<input type="button" value="Validate" onclick="myfunc()">
+<p></p>
+
+<script type="text/javascript">
+	function myfunc(){
+		val_text = document.getElementById('userName').value;
+		console.log(val_text);
+
+		/*
+			akshay
+			om
+			Om
+			omkar
+			omkar patil
+			omkar akshay patil
+			() group
+			()? group optional
+			[]{1,} => atleast one character
+		*/
+		reg_name = /^[a-zA-Z]([a-zA-Z ]{1,})?[a-zA-Z]$/;
+
+		result = reg_name.test(val_text)
+		console.log(result);
+
+		document.querySelector("p").innerText = (result)?"Valid":"Invalid";
+	}
+</script>
