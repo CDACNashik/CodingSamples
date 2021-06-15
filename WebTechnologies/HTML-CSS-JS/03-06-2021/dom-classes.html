@@ -1,0 +1,23 @@
+<p class="para"></p>
+
+<p class="para"></p>
+
+<button onclick="myfunc()">ENTER</button>
+<link rel="stylesheet" type="text/css" href="dom-class.css">
+
+<script type="text/javascript">
+	function myfunc(){
+		// console.log(document)
+		// console.log(document.getElementsByClassName('para'))
+		para = document.getElementsByClassName('para');
+		console.log(para)
+
+		para[0].innerHTML = ' <u>Hello World</u> ';
+		para[0].style.fontSize = '30px'
+		para[0].style.textAlign = 'center'
+		para[0].style.color = 'red'
+
+		para[1].innerText = ' <i> Hello </i>';
+		para[1].className = 'myclass'
+	}
+</script>

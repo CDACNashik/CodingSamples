@@ -1,0 +1,18 @@
+<select onchange="myfunc(this)">
+	<option value="red">Red Color</option>
+	<option value="green">Green Color</option>
+	<option value="blue">Blue Color</option>
+</select>	
+<script type="text/javascript">
+	function myfunc(el){
+		console.log(el);
+		console.log(el.value);
+		document.getElementById('para').style.background = el.value;
+		console.log(Math)
+		console.log(Math.random()); // 0 and 1
+		// console.log(el)
+		// console.log(el.value)
+		// document.getElementById('para').style.background = el.value;
+	}
+</script>
+<p id="para" style="border:solid;height: 100px"></p>

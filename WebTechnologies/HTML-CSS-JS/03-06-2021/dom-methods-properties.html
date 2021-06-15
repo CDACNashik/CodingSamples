@@ -1,0 +1,57 @@
+<!-- 
+	DOM Methods --
+	querySelector()
+	querySelectorAll()
+	getElementsByName()
+	getElementsByTagsName()
+
+	DOM Properties---
+
+	2 examples
+ -->
+<style type="text/css">
+	#para{
+		border:solid;padding: 20px;
+	}
+</style>
+ <ul>
+ 	<li>Enter Number</li>
+ 	<li>
+ 		<input type="text" id="txt">
+ 	</li>
+ 	<li>
+ 		<button onclick="myfunc()">Enter</button>
+ 	</li>
+ </ul>
+
+ <p id="para"></p>
+ <p id="para"></p>
+
+ <script type="text/javascript">
+ 	function myfunc(){
+ 		// console.log('test')
+ 		// console.log(document)
+ 		// console.log(document.getElementById("txt"))
+
+ 		record = document.getElementById("txt").value;
+ 		console.log(record , typeof record);
+
+ 		answer = parseInt(record);
+ 		console.log(answer , typeof answer);
+
+ 		console.log(Math , typeof Math);
+
+ 		console.log(Math.pow(answer,2));
+ 		console.log(Math.pow(answer,3));
+ 		console.log(Math.sqrt(answer));
+
+ 		console.log(document.getElementById('para'));
+
+ 		para = document.getElementById('para');
+
+ 		para.innerHTML = Math.sqrt(answer);
+ 		para.style.textAlign = 'center';
+ 		para.style.fontSize = '50px';
+ 		para.style.color = 'red';
+ 	}
+ </script>

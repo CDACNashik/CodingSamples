@@ -1,0 +1,31 @@
+<input type="checkbox" onchange="myfunc(this)"/>
+<input type="password" id="passBox">
+<p class="para">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+</p>
+
+<script type="text/javascript">
+
+	para = document.getElementsByClassName('para')
+	console.log(para);
+	para[0].style.display = 'none';
+
+	passRec = document.getElementById('passBox');
+	console.log(passRec);
+
+	function myfunc(el){
+		// console.log(Math.random())
+		console.log(el);
+		console.log(el.checked); //true
+		if(el.checked){
+			para[0].style.display = 'block';
+			passRec.setAttribute('type','text');
+		}
+		else{
+			para[0].style.display = 'none';
+			passRec.setAttribute('type','password');
+		}
+	}
+</script>
