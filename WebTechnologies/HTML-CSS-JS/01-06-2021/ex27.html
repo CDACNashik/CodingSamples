@@ -1,0 +1,20 @@
+<h1 onmouseout="myfunc2(this)" onmouseover="myfunc1(this)" style="border:solid;padding: 40px">
+	
+</h1>
+
+<!-- every attributes from html , in javascript is treated as properties -->
+
+<script type="text/javascript">
+	// for current example --- this stands for current element
+	function myfunc1(xyz){
+		console.log('test')
+		console.log(xyz);
+		console.log(typeof xyz); //object
+		console.log(xyz.style);
+		xyz.style.background = '#900';		
+	}
+	function myfunc2(xyz){
+		console.log('test1')
+		xyz.style.background = "#090";
+	}
+</script>

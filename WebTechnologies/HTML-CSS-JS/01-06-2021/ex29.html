@@ -1,0 +1,17 @@
+<ul>
+	<li>
+		<input type="text" onblur="myfunc1(this)" onfocus="myfunc2(this)">
+		<span style="display: none">Please Enter Value</span>
+	</li>
+</ul>
+
+<script type="text/javascript">
+	function myfunc2(el){
+		console.log(el);
+		console.log(el.nextElementSibling)
+		el.nextElementSibling.style.display = "inline-block";
+	}
+	function myfunc1(el){
+		el.nextElementSibling.style.display = "none";
+	}
+</script>

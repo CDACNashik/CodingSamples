@@ -1,0 +1,15 @@
+<input type="text"  onkeyup="myfunc(this)" value="1000" />
+
+<script type="text/javascript">
+	function myfunc(curEle){
+		// console.log(curEle)
+		// console.log(curEle.value)
+		// console.log(curEle.value.length)
+		if(curEle.value.length == 0){
+			curEle.style.border = "1px solid red";
+		}
+		else{
+			curEle.style.border = "1px solid green";
+		}
+	}
+</script>
