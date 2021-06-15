@@ -1,0 +1,61 @@
+<!-- accordion.html -->
+<style type="text/css">
+	h1,p{
+		width:300px;
+		border:1px solid;
+		font-size: 30px;
+		padding: 10px;
+		margin:0 auto;
+	}
+</style>
+<h1 onclick="showpara(this)">
+	header 1
+</h1>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	
+</p>
+<h1 onclick="showpara(this)">
+	header 2
+</h1>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	
+</p>
+<h1 onclick="showpara(this)">
+	header 3
+</h1>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	
+</p>
+
+
+<script type="text/javascript">
+function hidepara(){
+	allPara = document.querySelectorAll('p');
+	console.log(allPara);
+
+	allPara.forEach( function(val,i){
+		console.log(val);
+		console.log(i);
+		val.style.display = "none";
+	} )
+}
+hidepara();
+
+function showpara(curH1){
+	console.log(curH1);
+	hidepara();
+	curH1.nextElementSibling.style.display='block';
+}
+</script>
+
+
+
+
+
+

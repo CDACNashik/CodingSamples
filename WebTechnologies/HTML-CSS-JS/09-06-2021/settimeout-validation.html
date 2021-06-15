@@ -1,0 +1,22 @@
+<input type="text" name="" id="txt" />
+<button onclick="myfunc()">Enter</button>
+<p></p>
+<script type="text/javascript">
+	function myfunc(){
+		rec = document.querySelector("#txt").value
+		console.log(rec);
+
+		if(rec == ""){
+			msg = "Value Required";
+		}
+		else{
+			msg = rec;
+		}
+
+		document.querySelector("p").innerHTML="...checking";
+
+		setTimeout( function(){
+			document.querySelector("p").innerHTML=msg;
+		} , 3000);
+	}
+</script>

@@ -1,0 +1,32 @@
+<!-- event listener -->
+
+<button id="btn">Enter</button>
+
+<script type="text/javascript">
+	// event handler
+	document.getElementById("btn").onclick = function(){
+		console.log('test1')
+	}
+
+	document.getElementById("btn").onclick = function(){
+		console.log('test2')
+	}
+	document.getElementById("btn").onmouseover = function(){
+		console.log('test3')
+	}
+</script>
+
+<p style="border:solid;" id="para">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor 
+</p>
+
+<script type="text/javascript">
+	document.getElementById('para').addEventListener('mouseover',function(){
+		this.style.background = '#ccc'
+	});
+
+	document.getElementById('para').addEventListener("mouseover",function(){
+		this.style.fontSize="30px"
+	})
+</script>

@@ -1,0 +1,35 @@
+<!-- Manage DOM Nodes (on run time , dynamically create element & apply events on that element) -->
+
+<input type="text" id="txt" />
+<button>Add</button>
+<ul style="border:solid;padding: 30px">
+	
+</ul>
+
+<script type="text/javascript">
+	document.querySelector("button").onclick = function(){
+		// console.log('test');
+		
+		//step1 : create element using js
+		liTag = document.createElement('li');
+		// console.log(liTag,typeof liTag);
+
+		//step2 : passing value from textbox to litag
+		liTag.innerHTML = document.getElementById('txt').value;
+		console.log(liTag,typeof liTag);
+
+
+		//step2-a: attach event on li tag ( which is created)
+
+		liTag.addEventListener('mouseover',function(){
+			this.style.background = '#ccc'
+		})
+		liTag.addEventListener('mouseover',function(){
+			this.style.textAlign = 'right'
+		})
+
+		//step3 : append li tag in ul tag
+		// document.querySelector('ul').innerHTML = liTag;
+		document.querySelector('ul').appendChild(liTag);
+	}
+</script>
