@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+	</head>
+	<body>
+		<div class="container">
+			<form>
+			  <div class="mb-3">
+			    <label for="exampleInputEmail1" class="form-label">NO 1</label>
+			    <input type="text" class="form-control" id="rec1" aria-describedby="emailHelp">
+			    
+			  </div>
+			  <div class="mb-3">
+			    <label for="exampleInputPassword1" class="form-label">NO 2</label>
+			    <input type="text" class="form-control" id="rec2">
+			  </div>
+			  
+			  <button onclick="myfunc(1)" type="button" class="btn btn-primary">+</button>
+			  <button onclick="myfunc(2)"type="button" class="btn btn-primary">-</button>
+			  <button onclick="myfunc(3)"type="button" class="btn btn-primary">/</button>
+			  <button onclick="myfunc(4)" type="button" class="btn btn-primary">*</button>
+			</form>
+			<p id="message" style="border:1px solid;padding: 15px">
+				
+			</p>
+		</div>
+
+		<!-- extrenal javascript -->
+		<script type="text/javascript" src="calc.js"></script>
+
+		<!-- extrenal -->
+	</body>
+</html>

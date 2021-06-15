@@ -1,0 +1,19 @@
+<!-- this object -->
+<textarea onkeyup="myfunc(this)"></textarea>
+<p></p>
+
+<script type="text/javascript">
+	function myfunc(el){
+		console.log(el);
+		console.log(el.value);
+		console.log(el.value.length);
+		console.log(el.nextElementSibling)
+
+		if(el.value.length == 0){
+			el.nextElementSibling.innerHTML = "Please Enter Record";
+		}
+		else{
+			el.nextElementSibling.innerHTML = "Record Exist";
+		}
+	}
+</script>

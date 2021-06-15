@@ -1,0 +1,22 @@
+<input type="text" id="txt1" />
+<button onclick="myfunc()">Send</button>
+<input type="text" id="txt2" />
+
+<script type="text/javascript">
+	function myfunc(){
+		console.log('test');
+		// console.log(document);
+		// console.log(document.getElementById("txt1"));
+		// console.log(document.getElementById("txt1").value);
+
+		//getter
+		ans = document.getElementById("txt1").value;
+		console.log(ans);
+
+		// console.log(document.getElementById("txt2"))
+		document.getElementById("txt2").value = ans;
+		//setter
+
+		document.getElementById("txt1").value = ""
+	}
+</script>

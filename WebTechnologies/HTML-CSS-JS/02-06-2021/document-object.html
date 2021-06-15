@@ -1,0 +1,25 @@
+<!-- document -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<ul>
+			<li><input type="text" id="xyz" placeholder="Enter Name"></li>
+			<li>
+				<button onclick="myfunc()">Enter</button>
+			</li>
+		</ul>
+
+		<script type="text/javascript">
+			function myfunc(){
+				console.log('test')
+				console.log(document , typeof document);
+				// DOM selector method
+				console.log(document.getElementById("xyz") );
+				document.getElementById("xyz").value =900;
+			}
+		</script>
+	</body>
+</html>
