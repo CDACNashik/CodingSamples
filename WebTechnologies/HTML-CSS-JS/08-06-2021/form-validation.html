@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<style type="text/css">
+		.errClass{border:1px solid red;}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form>
+		  <div class="mb-3">
+		    <label for="exampleInputEmail1" class="form-label">Name</label>
+		    
+		    <input type="text" class="form-control" id="uname" aria-describedby="emailHelp" placeholder="Aniket Patil" onkeyup="chk_username(this)">
+		    
+		    <small style="display: none;color: red">Invalid Name</small>
+		  
+		  </div>
+		  <div class="mb-3">
+		    <label for="exampleInputPassword1" class="form-label">Mobile</label>
+		    <input type="text" class="form-control" id="umobile" placeholder="9820098200" onkeyup="chk_usermobile(this)">
+
+		    <small style="display: none;color: red">Invalid Mobile</small>
+
+		  </div>
+
+		  
+		  <button type="button" id="btn" class="btn btn-primary">Validate</button>
+		</form>
+
+		<script type="text/javascript" src="validation.js"></script>
+	</div>
+</body>
+</html>
