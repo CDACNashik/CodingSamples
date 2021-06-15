@@ -1,0 +1,27 @@
+<script type="text/javascript">
+	users = [
+		"Akshay",
+		"Ajay",
+		"Akash"
+	]
+	console.log(users);
+
+	//for of loop - value--output
+
+	for(xyz of users){
+		console.log(xyz);
+		document.write(`<li>${xyz}</li>`)
+	}
+
+	//for in loop - index-output
+	for(i in users){
+		console.log(i , users[i])
+		document.write(`<li>${users[i]}</li>`)
+	}
+
+	//for loop
+	for(x=0;x<users.length;x++){
+		console.log(x , users[x]);
+		document.write(`<li>${users[x]}</li>`)
+	}
+</script>

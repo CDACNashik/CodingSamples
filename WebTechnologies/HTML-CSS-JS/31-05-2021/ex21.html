@@ -1,0 +1,37 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+<div class="container">
+	<div class="row" id="allproducts">
+		
+	</div>
+</div>
+
+<script type="text/javascript">
+	products = [
+		{pname:"product 1",price:1000,imgPath:"home/product1.jpg"},
+		{pname:"product 2",price:2000,imgPath:"home/product2.jpg"},
+		{pname:"product 3",price:3000,imgPath:"home/product3.jpg"},
+		{pname:"product 4",price:3000,imgPath:"home/product4.jpg"}
+	]
+	console.log(products);
+
+	console.log(products.length)
+
+	if(products.length > 0){
+		
+		var str = ``;
+		for(values of products){
+			console.log(values)
+			str = str + `
+				<div class='col-xxl-4 text-center'>
+					<img src='${values.imgPath}' />
+					<h2>${values.price}</h2>
+					<p>${values.pname}</p>
+					<p><button class='btn btn-warning'> Add To Cart </button></p>
+				</div>
+			` 
+		}
+		console.log(str);
+		document.getElementById("allproducts").innerHTML = str;
+	}
+</script>
