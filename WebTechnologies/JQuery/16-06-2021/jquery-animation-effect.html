@@ -1,0 +1,19 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<button id="btn">Enter</button>
+<p style="border:solid;width: 200px;height: 200px">
+	
+</p>
+
+<script type="text/javascript">
+	$(function(){
+		$('#btn').click(function(){
+			// alert()
+			$("p").animate( {
+				'margin-left':'500px',
+				'border-radius':'100px',
+				'background':'red'
+			} , 3000 );
+		})
+	});
+</script>

@@ -1,0 +1,31 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<style type="text/css">
+	body{
+		height: 1000px;
+	}
+	.box{
+		width: 100px;
+		height: 1000px;
+		background: #900;
+		position: fixed;
+		right: 0;
+		top:0;
+	}
+</style>
+<button>Enter</button>
+<div class="box"></div>
+<script type="text/javascript">
+	$(function(){
+		// $(selector)-- $('h1'),$("#xyz"),$(".para"),$(document)
+		$("button").click(function(){
+			$(".box").animate( {
+				'width':"300px"
+			} , 2000 );
+		})
+	})
+</script>
+
+
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+	<style type="text/css">
+		h2,p{
+			border:1px solid #ccc;
+			padding: 15px;
+			margin:0;
+		}
+	</style>
+
+</head>
+<body>
+
+	<div class="container">
+		<h2>Heading 1</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+		<h2>Heading 2</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+		<h2>Heading 3</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("p").hide();
+
+			// console.log($("h2"));
+			// console.log(document.querySelectorAll("h2"));
+
+			$("h2").click(function(){
+				// console.log($(this));
+				// console.log($(this).next());
+				ans = $(this).next().is(":visible");
+				console.log(ans);
+
+				if(ans===false){
+					$("p").slideUp();
+					$(this).next().slideDown();
+				}
+			})
+		})
+	</script>
+</body>
+</html>

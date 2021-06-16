@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.chatBox{
+			width: 200px;
+			height: 250px;
+			background: #999;
+			position: fixed;
+			right: 50px;
+			bottom: -200px;
+			border-top-left-radius:10px ;
+			border-top-right-radius:10px ;
+		}
+		body{
+			height: 1000px;
+		}
+	</style>
+</head>
+<body>
+	<div class="chatBox"></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			$(".chatBox").mouseover(function(){
+				$(this).animate({
+					'bottom':'0'
+				},700);
+			});
+			$(".chatBox").mouseout(function(){
+				$(this).animate({
+					'bottom':'-200px'
+				},700);
+			});
+		})
+		// $(function(){
+
+		// })
+	</script>
+</body>
+</html>
