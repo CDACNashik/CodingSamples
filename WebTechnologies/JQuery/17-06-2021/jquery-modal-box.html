@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modal Box</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+	<style type="text/css">
+		p{
+			font-size: 40px;
+			line-height: 150%;
+		}
+		.blackbox{
+			width: 100%;height: 100%;
+			background: rgba(0,0,0,0.5);
+			/*0  visible , 1 invisible*/
+			position: fixed;
+			left: 0;top:0;
+		}
+		.modalbox{
+			width: 600px;
+			height: 300px;
+			background: #fff;
+			border-radius: 20px;
+			position: fixed;
+			left: 50%;
+			top:-350px;
+			margin-left: -300px;
+		}
+	</style>
+</head>
+<body>
+	<div class="blackbox"></div>
+	<div class="modalbox">
+		
+		<p>
+			<button id="close" class="btn btn-warning">X</button>
+		</p>
+	</div>
+
+	<div class="container">
+		<h1 class="text-center">Modal Box</h1>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+			<button id="btn" class="btn btn-warning">Open Modal Box</button>
+		</p>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		/*
+			$(document).ready(function(){
+
+			});
+
+			$(function(){
+
+			})
+		*/
+
+		$(function(){
+			//hide black box
+			$(".blackbox").hide();
+
+			$("#btn").click(function(){
+				$(".blackbox").fadeIn(1000);
+
+				$('.modalbox').animate({
+					'top':'100px'
+				} , 1000);
+			});
+
+			//jquery grouping selectors
+			$("#close , .blackbox").click(function(){
+
+				$(".blackbox").fadeOut(1000);
+
+				$('.modalbox').animate({
+					'top':'-350px'
+				} , 1000);
+			})
+		});
+	</script>
+</body>
+</html>
