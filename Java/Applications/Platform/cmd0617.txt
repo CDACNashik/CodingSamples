@@ -1,0 +1,28 @@
+    2  vi FileStreamTest2.java 
+    3  javac FileStreamTest2.java 
+    4  java FileStreamTest2 CPU 19500 350
+    5  ls
+    6  java FileStreamTest2 motherboard 11800 200
+    7  java FileStreamTest2 hdd 4999.50 450
+    8* java FileStreamTest2 
+    9  java FileStreamTest2
+   10  vi FileStreamTest2.java 
+   11  java FileStreamTest2 keyboard 1250 600
+   12  java FileStreamTest2 keyboard
+   13  vi FileStreamTest2.java 
+   14  java FileStreamTest2
+   15  vi FileStreamTest2.java 
+   16  ls
+   17  vi FileChannelTest.java
+   18  pwd
+   19  vi FileChannelTest.java
+   20  javac FileChannelTest.java 
+   21  vi data1.txt 
+   22  java FileChannelTest data1.txt 
+   23  vi data1.txt 
+   24  java FileChannelTest data1.txt 
+   25  vi data1.txt 
+   26  vi FileChannelTest.java
+   27  javap java.nio.file.Path
+   28  vi FileChannelTest.java
+   29  history > cmd0617.txt
