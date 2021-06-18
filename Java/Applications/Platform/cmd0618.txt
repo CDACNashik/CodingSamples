@@ -1,0 +1,60 @@
+    2  java FileStreamTest2
+    3  ls
+    4  vi Shop.java
+    5  javac Shop.java 
+    6  vi Shop.java
+    7  javac Shop.java 
+    8  vi Shop.java
+    9  javac Shop.java 
+   10  vi ServerSocketTest.java
+   11  javac ServerSocketTest.java
+   12  java ServerSocketTest
+   13  vi ServerSocketTest.java
+   14  javac ServerSocketTest.java
+   15  java ServerSocketTest
+   16  netstat -lt
+   17  netstat -lnt
+   18  vi ServerSocketTest.java
+   19  javac ServerSocketTest.java 
+   20  java ServerSocketTest &
+   21  netstat -lnt
+   22  kill 128290
+   23  netstat -lnt
+   24  java ServerSocketTest &
+   25  netstat -plnt
+   26  telnet localhost 6001
+   27  vi ServerSocketTest.java
+   28  ip -4
+   29  ip -4 a
+   30  telnet localhost 6001
+   31  pkill -ef "java ServerSocketTest &"
+   32  pkill -ef "java ServerSocketTest"
+   33  vi ServerSocketTest.java 
+   34  javac ServerSocketTest.java 
+   35* java ServerSocketTest
+   36  ps
+   37  telnet localhost 6001
+   38  vi ServerSocketTest.java 
+   39  javac ServerSocketTest.java 
+   40  vi ServerSocketTest.java 
+   41  javac ServerSocketTest.java 
+   42  vi ServerSocketTest.java 
+   43  javac ServerSocketTest.java 
+   44  vi ServerSocketTest.java 
+   45  javac ServerSocketTest.java 
+   46  java ServerSocketTest &
+   47  pkill -ef "java ServerSocketTest"
+   48  java ServerSocketTest &
+   49  telnet localhost 6001
+   50  vi ServerSocketTest.java 
+   51  vi SocketTest.java
+   52  javac SocketTest.java 
+   53  java SocketTest
+   54  vi SocketTest.java
+   55  javac SocketTest.java 
+   56  java SocketTest
+   57  java FileStreamTest2
+   58  java SocketTest
+   59  vi SocketTest.java
+   60  vi ServerSocketTest.java 
+   61  history > cmd0618.txt
