@@ -1,0 +1,24 @@
+    3   vi Shop.java 
+    4  vi ServerSocketTest.java 
+    5   vi Shop.java 
+    6  javac Shop.java 
+    7  vi DatagramSocketTest.java
+    8  javac DatagramSocketTest.java 
+    9  vi DatagramSocketTest.java
+   10  javac DatagramSocketTest.java 
+   11  vi DatagramSocketTest.java
+   12  javac DatagramSocketTest.java 
+   13  java DatagramSocketTest &
+   14  vi MulticastSocketTest.java
+   15  javac MulticastSocketTest.java 
+   16  vi MulticastSocketTest.java
+   17  javac MulticastSocketTest.java 
+   18  java MulticastSocketTest
+   19  ps
+   20  kill 58126
+   21  java MulticastSocketTest
+   22  vi DatagramSocketTest.java 
+   23  vi MulticastSocketTest.java 
+   24  javap java.net.MulticastSocket
+   25  vi MulticastSocketTest.java 
+   26  history > cmd0619.txt
