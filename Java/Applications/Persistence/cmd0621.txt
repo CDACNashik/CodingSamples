@@ -1,0 +1,67 @@
+    5  javap java.io.Serializable
+    6  mkdir src
+    7  vi src/Visitor.java
+    8  javac -d . src/Visitor.java
+    9  vi src/Site.java
+   10  javac -d . src/Site.java
+   11  vi src/Visitor.java 
+   12  vi src/Site.java 
+   13  javac -d . src/Site.java 
+   14  serialver tourism.Visitor
+   15  javac -d . src/Visitor.java
+   16  serialver tourism.Visitor
+   17  vi src/Site.java 
+   18  javac -d . src/Site.java 
+   19  serialver tourism.Site
+   20  vi src/Site.java 
+   21  javac -d . src/Site.java 
+   22  serialver tourism.Site
+   23  vi src/SiteObjectStore.java
+   24  javap java.io.ObjectOutputStream
+   25  vi src/SiteObjectStore.java
+   26  javap java.io.ObjectInputStreeam
+   27  javap java.io.ObjectInputStream
+   28  vi src/SiteObjectStore.java
+   29  javac -d . src/SiteObjectStore.java
+   30  vi src/SiteObjectStore.java
+   31  javac -d . src/SiteObjectStore.java
+   32  vi ObjecSerializationTest.java
+   33  mv ObjecSerializationTest.java ObjectSerializationTest.java 
+   34  javac ObjectSerializationTest.java 
+   35  vi ObjecSerializationTest.java
+   36  vi ObjectSerializationTest.java
+   37  javac ObjectSerializationTest.java 
+   38  java ObjectSerializationTest jack
+   39  java ObjectSerializationTest jill
+   40  java ObjectSerializationTest john
+   41  java ObjectSerializationTest
+   42  vi ObjectSerializationTest.java
+   43  javac ObjectSerializationTest.java 
+   44  vi ObjectSerializationTest.java
+   45  javac ObjectSerializationTest.java 
+   46  java ObjectSerializationTest jack
+   47  java ObjectSerializationTest jill
+   48  java ObjectSerializationTest john
+   49  java ObjectSerializationTest
+   50  java ObjectSerializationTest jill
+   51  java ObjectSerializationTest
+   52  vi ObjectSerializationTest.java
+   53  ls
+   54  javac -d . src/SiteObjectStore.java
+   55  vi src/SiteObjectStore.java
+   56  vi ObjectSerializationTest.java
+   57  vi src/Site.java 
+   58  vi ObjectSerializationTest.java
+   59  vi src/Visitor.java 
+   60  vi ObjectSerializationTest.java
+   61  vi src/SiteObjectStore.java
+   62  vi ObjectSerializationTest.java
+   63  java ObjectSerializationTest
+   64  java ObjectSerializationTest John
+   65  java ObjectSerializationTest
+   66  java ObjectSerializationTest jill
+   67  java ObjectSerializationTest
+   68  java ObjectSerializationTest jane
+   69  java ObjectSerializationTest
+   70  ls
+   71  history > cmd0621.txt
