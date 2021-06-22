@@ -1,0 +1,24 @@
+    3  vi CitiZoo.store 
+    4  vi JDBCBasicSQLTest.java
+    5  javac JDBCBasicSQLTest.java 
+    6  java JDBCBasicSQLTest
+    7  export CLASSPATH=.:/opt/jars/*
+    8  java JDBCBasicSQLTest
+    9  vi JDBCBasicSQLTest.java
+   10  javac JDBCBasicSQLTest.java 
+   11* java JDBCBasicSQLTest 202
+   12  vi JDBCBasicSQLTest.java
+   13  vi JDBCBasicSQLTest.java
+   14  vi JDBCBasicSQLTest.java 
+   15  javac JDBCBasicSQLTest.java 
+   16  java JDBCBasicSQLTest
+   17  java JDBCBasicSQLTest 202
+   18  java JDBCBasicSQLTest
+   19  java JDBCBasicSQLTest 302
+   20  vi JDBCBasicSQLTest.java 
+   21  javac JDBCBasicSQLTest.java 
+   22  java JDBCBasicSQLTest
+   23  java JDBCBasicSQLTest 101
+   24  java JDBCBasicSQLTest
+   25  vi JDBCBasicSQLTest.java 
+   26  history > cmd0622.txt 
