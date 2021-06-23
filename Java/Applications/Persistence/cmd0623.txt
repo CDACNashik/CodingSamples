@@ -1,0 +1,19 @@
+    2  vi JDBCParamSQLTest.java
+    3  javac JDBCParamSQLTest.java
+    4  java JDBCParamSQLTest CU104 103 9
+    5  java -cp .:/opt/jars/ojdbc6.jar JDBCParamSQLTest CU104 103 9
+    6  export CLASSPATH=.:/opt/jars/*
+    7  java JDBCParamSQLTest CU101 106 3
+    8  java JDBCParamSQLTest CU101 105 3
+    9  vi JDBCParamSQLTest.java
+   10  cp JDBCParamSQLTest.java JDBCStorProcTest.java
+   11  vi JDBCStorProcTest.java 
+   12  javap java.sql.Types
+   13  vi JDBCStorProcTest.java 
+   14  javac JDBCStorProcTest.java 
+   15  java JDBCStorProcTest CU102 104 6
+   16  java JDBCStorProcTest CU105 101 3
+   17  java JDBCStorProcTest CU103 101 3
+   18  vi JDBCStorProcTest.java 
+   19  vi JDBCParamSQLTest.java
+   20  history > cmd0623.txt
