@@ -1,0 +1,75 @@
+<!-- <form>
+	<input type="text" name="">
+	<input type="text" name="">
+	<input type="submit" name="">
+</form> -->
+
+<!-- https://en.wikipedia.org/wiki/Ajax_(programming) -->
+
+<button onclick="myfunc()">FETCH RECORD FROM API</button>
+<ul>
+	<li>test</li>
+	<li>test</li>
+	<li>test</li>
+</ul>
+
+<table align="center" width="300">
+	
+</table>
+
+<script type="text/javascript">
+	function myfunc(){
+		// check button click
+		// console.log('button working');
+
+		// check new XMLHttpRequest() Object
+		var xmlhttp = new XMLHttpRequest();
+		console.log(xmlhttp , typeof xmlhttp);
+
+
+		//detect ur readystate cycle using --- onreadystatechange
+
+		xmlhttp.onreadystatechange = function(){
+			// console.log(xmlhttp.readyState);
+
+			//if cycle is completed & status=200 then fetch values from API or server side
+
+			if(xmlhttp.readyState==4 && xmlhttp.status==200){
+				// console.log('yes data received')
+				console.log(xmlhttp.responseText)
+				console.log(typeof xmlhttp.responseText)
+
+				//data is available in string format , plz convert string to JSON Object
+
+				result = JSON.parse(xmlhttp.responseText);
+				console.log(result);
+
+				if(result.length > 0){
+					// console.log('yes')
+					var str = ``;
+					for(record of result){
+						console.log(record);
+						// console.log(record.name);
+						// str = str + `<li>${record.name}</li>`
+						str = str + `<tr>
+							<td>${record.name}</td>
+							<td>${record.email}</td>
+						</tr>`
+
+					}
+					console.log(str);
+					// document.querySelector("ul").innerHTML = str;
+					document.querySelector("table").innerHTML = str;
+				}
+			}
+		}
+
+
+		//set ur path to fetch data from server side
+		// xmlhttp.open(method, url path or server side path , true)
+		xmlhttp.open("get","https://jsonplaceholder.typicode.com/users",true); // readyState-1
+
+		//send() function can have data in post method
+		xmlhttp.send(); // // readyState-2
+	}
+</script>

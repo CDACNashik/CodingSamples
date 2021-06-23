@@ -1,0 +1,44 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+
+<button id="btn">GET VALUES</button>
+
+<ul>
+	
+</ul>
+
+<script type="text/javascript">
+	$(function(){
+		$("#btn").click(function(){
+
+			$.ajax({
+				type:"get",
+				url:"https://jsonplaceholder.typicode.com/users",
+				success:function(responseFromServer){
+					console.log("SUCCESS AREA");
+					console.log(responseFromServer);
+
+					if(responseFromServer.length>0){
+						$.each(responseFromServer , function(i,val){
+							// console.log(val);
+							console.log(val.name);
+						});
+					}
+				}
+			});
+
+		});
+
+		/*
+			$.each(array , function(index,value){
+	
+			})
+		*/
+		/*
+		$.each([10,20,30] , function(i,rec){
+			console.log(i , rec)
+		})
+		*/
+	})
+</script>
