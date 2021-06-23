@@ -1,0 +1,11 @@
+{
+  "name": "first-project",
+  "version": "1.0.0",
+  "description": "this is first project in node js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "cdac-nashik",
+  "license": "ISC"
+}
