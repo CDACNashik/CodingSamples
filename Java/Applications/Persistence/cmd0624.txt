@@ -1,0 +1,46 @@
+    2  ls
+    3  vi JDBCBasicSQLTest.java 
+    4  vi ObjectSerializationTest.java 
+    5  ls /opt/jars/
+    6  mkdir JPAAnnotationTest
+    7  cd JPAAnnotationTest/
+    8  mkdir META-INF
+    9  wget met.hussain.in/dac/persistence.xml -P META-INF/
+   10  vi META-INF/persistence.xml 
+   11  export CLASSPATH=.:/opt/jars/*
+   12  mkdir src
+   13  vi src/OrderEntity.java
+   14  javac -d . src/OrderEntity.java 
+   15  unset CLASSPATH
+   16  javac -d . src/OrderEntity.java 
+   17  export CLASSPATH=.:/opt/jars/*
+   18  javac -d . src/OrderEntity.java 
+   19  vi src/ProductEntity.java
+   20  javac -d . src/ProductEntity.java
+   21  vi src/ProductEntity.java
+   22  javac -d . src/ProductEntity.java
+   23  vi META-INF/persistence.xml 
+   24  vi src/ProductEntity.java
+   25  vi META-INF/persistence.xml 
+   26  vi Client.java
+   27  vi META-INF/persistence.xml 
+   28  vi Client.java
+   29  javac Client.java 
+   30  java Client
+   31  vi Client.java
+   32  javac Client.java 
+   33  vi Client.java
+   34  javac Client.java 
+   35  java Client
+   36  vi Client.java
+   37  javac Client.java 
+   38  java Client
+   39  java Client 102
+   40  java Client 109
+   41  vi Client.java
+   42  vi src/OrderEntity.java 
+   43  vi src/ProductEntity.java 
+   44  vi META-INF/persistence.xml 
+   45  vi Client.java 
+   46  cd ..
+   47  history > cmd0624.txt 
