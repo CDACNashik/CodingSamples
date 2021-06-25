@@ -1,0 +1,36 @@
+    2  export CLASSPATH=.:/opt/jars/*
+    3  vi ../Platform/ServerSocketTest.java 
+    4  mkdir JPATransactionTest
+    5  cd JPATransactionTest/
+    6  mkdir META-INF
+    7  wget met.hussain.in/dac/persistence.xml -P META-INF/
+    8  wget met.hussain.in/dac/orm.xml -P META-INF/
+    9  vi META-INF/persistence.xml 
+   10  vi META-INF/orm.xml 
+   11  mkdir src
+   12  cp ../JPAAnnotationTest/src/OrderEntity.java src/
+   13  vi src/OrderEntity.java 
+   14  javac -d . src/OrderEntity.java 
+   15  vi META-INF/orm.xml 
+   16  vi src/CounterEntity.java
+   17  javac -d . src/CounterEntity.java
+   18  vi src/OrderManager.java
+   19  javac -d . src/OrderManagerService.java
+   20  javac -d . src/OrderManager.java
+   21  vi src/OrderManagerService.java
+   22  vi src/OrderManager.java
+   23  vi src/OrderManagerService.java
+   24  vi META-INF/orm.xml 
+   25  vi src/OrderManagerService.java
+   26  vi META-INF/orm.xml 
+   27  vi src/OrderManagerService.java
+   28  javac -d . src/OrderManagerService.java
+   29  vi src/OrderManagerService.java
+   30  javac -d . src/OrderManagerService.java
+   31  vi src/OrderManagerService.java
+   32  javac -Xlint -d . src/OrderManagerService.java
+   33  vi src/OrderManagerService.java
+   34  javac -d . src/OrderManagerService.java
+   35  vi src/OrderManagerService.java
+   36  cd ..
+   37  history > cmd0625.txt
