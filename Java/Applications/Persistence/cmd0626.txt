@@ -1,0 +1,36 @@
+    3  cd JPATransactionTest/
+    4  vi src/OrderManagerService.java 
+    5  vi META-INF/orm.xml 
+    6  vi src/OrderManager.java 
+    7  vi src/OrderManagerService.java 
+    8  rmiregistry &
+    9  netstat -ntl
+   10  vi jndi.properties
+   11  vi Server.java
+   12  vi META-INF/persistence.xml 
+   13  vi Server.java
+   14  vi src/OrderManagerService.java 
+   15  vi Server.java
+   16  vi jndi.properties
+   17  vi Server.java
+   18  javac Server.java 
+   19  javac -d . src/*.java
+   20  javac Server.java 
+   21  java Server &
+   22  netstat -ntl
+   23  vi src/OrderManagerService.java 
+   24  vi Client.java
+   25  javac Client.java 
+   26  java Client CU104 103 5
+   27  java Client CU107 101 8
+   28  java Client CU102 101 8
+   29  java Client CU104
+   30  vi Client.java
+   31  pkill -ef "java Server"
+   32  pkill -ef rmiregistry
+   33  cd ../..
+   34  mkdir Web
+   35  cd Web/
+   36  cd ..
+   37  cd Persistence/
+   38  history > cmd0626.txt
