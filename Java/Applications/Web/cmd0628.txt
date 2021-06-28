@@ -1,0 +1,41 @@
+    1  cp ../Platform/ServerSocketTest.java HTTPServerTest.java
+    2  vi HTTPServerTest.java 
+    3  javac HTTPServerTest.java 
+    4  java HTTPServerTest &
+    5  curl -i http://localhost:6004/msft
+    6  curl -i http://localhost:6004/amzn
+    7  curl -i http://localhost:6004/gogl
+    8  vi HTTPServerTest.java 
+    9  vi URLClientTest.java
+   10  javac URLClientTest.java 
+   11  java URLClientTest appl
+   12  java URLClientTest gogl
+   13  java URLClientTest sunw
+   14  vi URLClientTest.java
+   15  vi HTTPServerTest.java 
+   16  mkdir ServletTest
+   17  cd ServletTest/
+   18  mkdir BasicWebApp
+   19  mkdir BasicWebApp/WEB-INF
+   20  mkdir BasicWebApp/WEB-INF/classes
+   21  wget met.hussain.in/dac/web.xml -P BasicWebApp/WEB-INF/
+   22  wget met.hussain.in/dac/web.xml 
+   23  history > ../cmd0629.txt
+    1  wget met.hussain.in/dac/web.xml -P BasicWebApp/WEB-INF/
+    2  vi BasicWebApp/welcome.html
+    3  . /opt/glassfish5/setenv.sh 
+    4  asadmin deploy BasicWebApp
+    5  vi BasicWebApp/welcome.html 
+    6  vi BasicWebApp/WEB-INF/web.xml 
+    7  asadmin undeploy BasicWebApp
+    8  asadmin deploy BasicWebApp
+    9  mkdir src
+   10  vi src/GreetingServlet.java
+   11  javap javax.servlet.Servlet
+   12  vi src/GreetingServlet.java
+   13  javac -d BasicWebApp/WEB-INF/classes/ src/GreetingServlet.java 
+   14  vi src/GreetingServlet.java
+   15  javac -d BasicWebApp/WEB-INF/classes/ src/GreetingServlet.java 
+   16  vi BasicWebApp/WEB-INF/web.xml 
+   17  touch BasicWebApp/.reload
+   18  history >> ../cmd0629.txt 
