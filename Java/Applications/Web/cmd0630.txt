@@ -1,0 +1,49 @@
+    1  mkdir JSPTest
+    2  cd JSPTest/
+    3  mkdir -p ClassicWebApp/WEB-INF/classes
+    4  wget met.hussain.in/dac/web.xml -P ClassicWebApp/WEB-INF/
+    5  asadmin deploy ClassicWebApp
+    6  vi ClassicWebApp/welcome.jsp
+    7  mkdir src
+    8  vi src/CounterBean.java
+    9  javac -d ClassicWebApp/WEB-INF/classes/ src/CounterBean.java 
+   10  touch ClassicWebApp/.reload
+   11  cp ClassicWebApp/welcome.jsp ClassicWebApp/beantest.jsp
+   12  vi ClassicWebApp/beantest.jsp
+   13  vi src/GreeterBean.java
+   14  javac -d ClassicWebApp/WEB-INF/classes/ src/GreeterBean.java 
+   15  touch ClassicWebApp/.reload
+   16  vi ClassicWebApp/beantest.jsp
+   17  vi src/GreeterBean.java
+   18  vi ClassicWebApp/beantest.jsp
+   19  vi src/GreeterBean.java
+   20  vi ClassicWebApp/beantest.jsp
+   21  wget met.hussain.in/dac/taglib.tld -P ClassicWebApp/WEB-INF/
+   22  wget met.hussain.in/dac/taglib.xml -O ClassicWebApp/WEB-INF/taglib.tld
+   23  vi ClassicWebApp/WEB-INF/taglib.tld 
+   24  vi src/ClockTag.java
+   25  javac -d ClassicWebApp/WEB-INF/classes/ src/ClockTag.java
+   26  vi src/ClockTag.java
+   27  javac -d ClassicWebApp/WEB-INF/classes/ src/ClockTag.java
+   28  vi src/ClockTag.java
+   29  vi ClassicWebApp/welcome.jsp 
+   30  vi src/ClockTag.java
+   31  vi ClassicWebApp/welcome.jsp 
+   32  vi ClassicWebApp/beantest.jsp 
+   33  vi ClassicWebApp/welcome.jsp 
+   34  vi src/ClockTag.java
+   35  javac -d ClassicWebApp/WEB-INF/classes/ src/ClockTag.java
+   36  vi ClassicWebApp/WEB-INF/taglib.tld 
+   37  cp ClassicWebApp/welcome.jsp ClassicWebApp/tagtest.jsp
+   38  vi ClassicWebApp/tagtest.jsp 
+   39  vi src/ClockTag.java
+   40  vi ClassicWebApp/WEB-INF/taglib.tld 
+   41  vi ClassicWebApp/tagtest.jsp 
+   42  vi ClassicWebApp/WEB-INF/taglib.tld 
+   43  vi ClassicWebApp/tagtest.jsp 
+   44  vi ClassicWebApp/WEB-INF/taglib.tld 
+   45  vi ClassicWebApp/tagtest.jsp 
+   46  vi src/ClockTag.java
+   47  vi ClassicWebApp/tagtest.jsp 
+   48  cd ..
+   49  history > cmd0630.txt
