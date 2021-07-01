@@ -15,5 +15,20 @@
 		</attribute>
   	</tag>
 
+	<tag>
+		<name>lotto</name>
+		<tag-class>classic.web.app.LottoTag</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>digits</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+		</attribute>
+  	</tag>
+
+
 </taglib>
 
