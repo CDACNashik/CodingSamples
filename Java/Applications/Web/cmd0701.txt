@@ -1,0 +1,38 @@
+    4  vi src/ClockTag.java 
+    5  vi ClassicWebApp/WEB-INF/web.xml 
+    6  vi ClassicWebApp/WEB-INF/taglib.tld 
+    7  vi ClassicWebApp/tagtest.jsp 
+    8  javac -d ClassicWebApp/WEB-INF/classes/ src/*.java
+    9  touch ClassicWebApp/.reload 
+   10  vi ClassicWebApp/WEB-INF/taglib.tld 
+   11  vi ClassicWebApp/tagtest.jsp 
+   12  vi src/LottoTag.java
+   13  javac -d ClassicWebApp/WEB-INF/classes/ src/LottoTag.java 
+   14  vi ClassicWebApp/WEB-INF/taglib.tld 
+   15  touch ClassicWebApp/.reload 
+   16  vi ClassicWebApp/tagtest.jsp 
+   17  vi src/LottoTag.java
+   18  vi ClassicWebApp/tagtest.jsp 
+   19  vi src/LottoTag.java
+   20  vi ClassicWebApp/tagtest.jsp 
+   21  vi src/LottoTag.java
+   22  vi ClassicWebApp/tagtest.jsp 
+   23  vi src/LottoTag.java
+   24  vi ClassicWebApp/WEB-INF/taglib.tld 
+   25  vi ClassicWebApp/tagtest.jsp 
+   26  vi ClassicWebApp/WEB-INF/taglib.tld 
+   27  vi src/LottoTag.java
+   28  vi ClassicWebApp/WEB-INF/taglib.tld 
+   29  vi src/ProductBean.java
+   30  javac -d ClassicWebApp/WEB-INF/classes/ src/ProductBean.java 
+   31  touch ClassicWebApp/.reload 
+   32  vi jstltest.jspx
+   33  mv jstltest.jspx ClassicWebApp/
+   34  vi ClassicWebApp/jstltest.jspx 
+   35  vi src/ProductBean.java
+   36  vi ClassicWebApp/jstltest.jspx 
+   37  vi src/ProductBean.java 
+   38  vi ClassicWebApp/jstltest.jspx 
+   39  vi src/ProductBean.java 
+   40  vi ClassicWebApp/jstltest.jspx 
+   41  history > ../cmd0701.txt
