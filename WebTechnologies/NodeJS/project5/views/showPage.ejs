@@ -1,0 +1,26 @@
+<%- include('header') %>
+
+<div class="container">
+    <%= x%>
+    <%= y%>
+    <%= recordFromDb%>
+    <h1>Show records from DB</h1>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">name</th>
+            <th scope="col">email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% recordFromDb.forEach(function(values){ %>
+            <tr>
+                <td><%= values.userid %></td>
+                <td><%= values.username %></td>
+                <td><%= values.useremail %></td>
+            </tr>
+            <% }) %>
+        </tbody>
+      </table>
+</div>

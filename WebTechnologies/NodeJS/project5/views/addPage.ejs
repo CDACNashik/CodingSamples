@@ -1,0 +1,22 @@
+<%- include('header') %>
+
+<div class="container">
+    <h1>Add Record in DB</h1>
+    <form method="post" action="/form-action">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">
+            User Name</label>
+          <input type="text" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">
+            User Email
+          </label>
+          <input type="text" name="useremail" class="form-control" id="exampleInputPassword1">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-primary">Reset Data</button>
+      </form>
+</div>

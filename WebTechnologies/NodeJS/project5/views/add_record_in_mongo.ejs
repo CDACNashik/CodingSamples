@@ -1,0 +1,35 @@
+<%- include('header.ejs')%>
+
+<div class="container">
+    <form id="userform">
+    <ul>
+        <li>Name</li>
+        <li>
+            <input type="text" name="username">
+        </li>
+        <li>Age</li>
+        <li>
+            <input type="text" name="userage">
+        </li>
+        <li>
+            <input type="button" value="add" class="add_value">
+        </li>
+    </ul>
+</form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $(".add_value").click(function(){
+            // alert()
+            ans = $("#userform").serialize();
+            //username=test&userage=20
+            console.log(ans);
+            // $.ajax({
+
+            // })
+        })
+    });
+</script>
