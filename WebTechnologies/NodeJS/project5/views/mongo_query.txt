@@ -1,0 +1,67 @@
+1) install mongodb from mongodb.com
+
+2)run mongod.exe for server
+
+3)run mongo.exe for mongo functionality
+
+4) now run db.help() for all help list
+
+5) check db.stats() This will show the database name, number of collection and documents in the database
+
+6) use node_crud -> is used to create database. The command will create a new database if it doesn't exist
+
+7) db -> will check your currently selected
+
+8) show dbs -> will show all databases ( if database not present mean u hve to create collection . ie table)
+
+9) create collection with row using following command:
+
+db.person.insert({"name":"ajay" , "mobile":9809809800});
+db.person.insert({"name":"sujay" , "mobile":9809809801});
+db.person.insert({"name":"vijay" , "mobile":9809809802});
+db.person.insert({"name":"jay" , "mobile":9809809803});
+
+10) Show all collection using:
+show collections
+
+11)create collection without rows
+db.createCollection("product");
+
+db.createCollection("productlist",{autoIndexId:true});
+db.productlist.insert({"name":"jay" , "mobile":9809809803});
+db.productlist.insert({"name":"jaya" , "mobile":1809809803});
+
+
+12)drop collection
+db.product.drop();
+
+13) show all data from collection
+db.person.find();
+
+14) show all data from collection with format
+db.person.find().pretty();
+
+15) db.person.find({"name":"ajay"}).pretty(); =>  where name="ajay"
+
+16) db.person.find({"mobile":{$lt:9809809802}}).pretty(); =>  where mobile<9809809802
+17) db.person.find({"mobile":{$lte:9809809802}}).pretty(); =>  where mobile<=9809809802
+17) db.person.find({"mobile":{$gt:9809809802}}).pretty(); =>  where mobile>9809809802
+17) db.person.find({"mobile":{$gte:9809809802}}).pretty(); =>  where mobile>=9809809802
+18) db.person.find({"mobile":{$ne:9809809802}}).pretty(); =>  where mobile!=9809809802
+
+19) db.person.find({$and:[{name:"vijay"},{"mobile":9809809802}]}).pretty(); =>  where mobile=9809809802 and name="vijay"
+
+20) db.person.find({$or:[{name:"sujay"},{"mobile":9809809802}]}).pretty(); =>  where mobile=9809809802 or name="vijay"
+
+
+db.person.insert({name:"dhiraj","mobile":123});
+db.person.insert({name:"dhiraj","mobile":1234});
+db.person.insert({name:"dhiraj","mobile":1235});
+
+21) db.person.remove({"name":"dhiraj"}); -- this will remove all records
+22) db.person.remove({"name":"dhiraj"},1); -- this will remove first records
+
+db.person.update({"_id":userid},{$set:{"name":"new","mobile":"99"});
+
+18) to drop database use:
+db.dropDatabase();
