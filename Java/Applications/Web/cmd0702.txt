@@ -1,0 +1,89 @@
+    1  cd Persistence/JPATransactionTest/
+    2  ls
+    3  vi src/OrderManagerService.java 
+    4  export CLASSPATH=.:/opt/jars/*
+    5  javac -d src/OrderManagerService.java 
+    6  javac -d . src/OrderManagerService.java 
+    7  vi jndi.properties 
+    8  rmiregistry 20000 &
+    9  java Server &
+   10  vi Client.java 
+   11  javac Client.java 
+   12  java Client CU102
+   13  cd ../../Web/
+   14  . /opt/glassfish5/setenv.sh 
+   15  mkdir -p JAXRSTest/ModernWebApp/WEB-INF/classes
+   16  cd JAXRSTest/
+   17  wget met.hussain.in/dac/web.xml -P ModernWebApp/WEB-INF/
+   18  asadmin deploy ModernWebApp
+   19  mkdir src
+   20  cp ../../Persistence/JPATransactionTest/src/OrderEntity.java src/
+   21  cp ../../Persistence/JPATransactionTest/src/OrderManager.java src/
+   22  vi src/RestConfigApp.java
+   23  javac -d . src/RestConfigApp.java
+   24  vi src/OrderManagerAPI.java
+   25  javac -d . src/OrderManagerAPI.java 
+   26  touch ModernWebApp/.reload
+   27  curl localhost:8001/ModernWebApp/api/orders/now
+   28  javac -d . src/OrderManagerAPI.java 
+   29  touch ModernWebApp/.reload
+   30  curl localhost:8001/ModernWebApp/api/orders/now
+   31  vi src/OrderManagerAPI.java 
+   32  asadmin deploy ModernWebApp
+   33  cp ../ServletTest/BasicWebApp/welcome.html ModernWebApp/
+   34  vi src/OrderManagerAPI.java
+   35  javac -d . src/OrderManagerAPI.java 
+   36  touch ModernWebApp/.reload
+   37  vi src/RestConfigApp.java 
+   38  asadmin undeploy ModernWebApp
+   39  cp /SoftDev/Test/JAXRSTest/src/RestConfigApp.java src/
+   40  cp /SoftDev/Test/JAXRSTest/src/OrderManagerAPI.java src/
+   41  javac -d . src/*.java
+   42  asadmin deploy ModernWebApp
+   43  asadmin undeploy ModernWebApp
+   44  asadmin deploy ModernWebApp
+   45  curl localhost:8001/ModernWebApp/api/orders/CU101
+   46  asadmin undeploy ModernWebApp
+   47  vi ModernWebApp/WEB-INF/web.xml 
+   48  vi src/OrderManagerAPI.java 
+   49  rm -r src/
+   50  vi src/OrderManagerAPI.java 
+   51  javac -d src/*.java
+   52  javac -d . src/*.java
+   53  ls
+   54  rm -r shopping/
+   55  rm -r modern
+   56  asadmin deploy ModernWebApp
+   57  javac -d ModernWebApp/WEB-INF/classes/ src/*.java
+   58  touch ModernWebApp/.reload 
+   59  ls
+   60  vi src/OrderManagerAPI.java 
+   61  curl localhost:8001/ModernWebApp/api/orders/now
+   62  vi src/OrderManagerAPI.java 
+   63  javac -d ModernWebApp/WEB-INF/classes/ src/*.java
+   64  touch ModernWebApp/.reload 
+   65  curl -i localhost:8001/ModernWebApp/api/orders/CU102
+   66  vi src/OrderManagerAPI.java 
+   67  javac -d ModernWebApp/WEB-INF/classes/ src/*.java
+   68  touch ModernWebApp/.reload 
+   69  curl -i localhost:8001/ModernWebApp/api/orders/CU102
+   70  vi src/OrderManagerAPI.java 
+   71  javac -d ModernWebApp/WEB-INF/classes/ src/*.java
+   72  touch ModernWebApp/.reload 
+   73  curl -i localhost:8001/ModernWebApp/api/orders/CU102
+   74  vi src/OrderManagerAPI.java 
+   75  curl -i localhost:8001/ModernWebApp/api/orders/CU101;echo
+   76  curl -i localhost:8001/ModernWebApp/api/orders/CU108;echo
+   77  vi src/OrderManagerAPI.java 
+   78  javac -d ModernWebApp/WEB-INF/classes/ src/*.java
+   79  vi src/OrderManagerAPI.java 
+   80  javac -d ModernWebApp/WEB-INF/classes/ src/*.java
+   81  vi src/OrderManagerAPI.java 
+   82  javac -d ModernWebApp/WEB-INF/classes/ src/*.java
+   83  touch ModernWebApp/.reload 
+   85  curl -X POST -H 'Content-Type: application/json' --data '{"customerId":"CU103", "productNo":105, "quantity":3}' -i localhost:8001/ModernWebApp/api/orders;echo
+   86  vi src/OrderManagerAPI.java 
+   87  wget met.hussain.in/dac/salesui.html -P ModernWebApp/
+   88  wget met.hussain.in/dac/salesui.js -P ModernWebApp/
+   89  vi ModernWebApp/salesui.html 
+   90  vi ModernWebApp/salesui.js 
