@@ -1,0 +1,22 @@
+<%- include('header.ejs') %>
+<div class="container">
+    <%=recordFromDb%>
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>ID</th>
+            <th>Delete</th>
+        </tr>
+        <%recordFromDb.forEach(function(obj){%>
+            <tr>
+                <td><%= obj.name%></td>
+                <td><%= obj.age%></td>
+                <td><%= obj._id%></td>
+                <td>
+                    <a href="/deleteData/<%= obj._id%>/100">DELETE</a>
+                </td>
+            </tr>
+        <%})%>
+    </table>
+</div>

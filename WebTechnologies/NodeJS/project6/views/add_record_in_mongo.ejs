@@ -1,0 +1,47 @@
+<%- include('header.ejs')%>
+
+<div class="container">
+    <form id="userform">
+    <ul>
+        <li>Name</li>
+        <li>
+            <input type="text" name="username">
+        </li>
+        <li>Age</li>
+        <li>
+            <input type="text" name="userage">
+        </li>
+        <li>Email</li>
+        <li>
+            <input type="text" name="useremail">
+        </li>
+        <li>
+            <input type="button" value="add" class="add_value">
+        </li>
+    </ul>
+</form>
+<div class="showErr"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $(".add_value").click(function(){
+            // alert()
+            dataFromtextbox = $("#userform").serialize();
+            //username=test&userage=20
+            console.log(dataFromtextbox);
+            $.ajax({
+                type:"post",
+                data:dataFromtextbox,
+                url:"/form-action-mongo",
+                success:function(resultsFromNode){
+                    console.log(resultsFromNode);
+                    //{msg:"Route Called"}
+                    $(".showErr").html(resultsFromNode['errmsg'])
+                }
+            })
+        })
+    });
+</script>
