@@ -1,0 +1,21 @@
+<script>
+    class A{
+        myfuncA(){
+            console.log("A");
+        }
+    }
+    class B{}
+    class C{}
+
+    class D{
+        constructor(){
+            this.x1 = new A();
+            this.x2 = new B();
+            this.x3 = new C();
+        }
+    }
+
+    obj = new D();
+    console.log(obj.x1)
+    console.log(obj.x1.myfuncA())
+</script>
