@@ -1,0 +1,16 @@
+<script>
+    class A{
+        myfunc(){
+            console.log("Class A");
+        }
+    }
+    class B extends A{
+        myfunc(){
+            super.myfunc();
+            console.log("Class B");
+        }
+    }
+
+    obj = new B;
+    obj.myfunc();
+</script>

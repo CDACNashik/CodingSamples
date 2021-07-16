@@ -1,0 +1,21 @@
+<script>
+    class TV{
+        channel = "Channel1 ";
+        volume = "Dolby";
+
+        showRecord(){
+            console.log("Method Called");
+            console.log(typeof this);
+            console.log(this);
+            console.log(this.channel)
+            console.log(this.volume)
+        }
+    }
+
+    var remote = new TV();
+    console.log(remote);
+
+    remote.showRecord();
+</script>
+
+<!-- <button onclick="myfunc(this)"></button> -->

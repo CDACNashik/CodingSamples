@@ -1,0 +1,16 @@
+<script>
+    class A{
+        constructor(){
+            console.log("A Example")
+        }
+    }
+    class B extends A{
+        constructor(){
+            super();
+            console.log("B Example")
+            console.log(this)
+        }
+    }
+    obj = new B;
+    console.log(obj);
+</script>

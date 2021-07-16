@@ -1,0 +1,33 @@
+<script>
+    class Pdf{
+        showPdf(){
+            console.log("PDF DATA")
+        }
+    }
+    class SMS{
+        sendSMS(){
+            console.log("Send SmS ON MOBILE")
+        }
+    }
+    class Email{
+        sendEmail(){
+            console.log("Send Email")
+        }
+    }
+
+    // class Ecommerce extends Email,SMS,Pdf{
+
+    // }
+
+    class Ecommerce{
+        //Dependency injection procedure
+        constructor(){
+            this.objSMS = new SMS();
+            this.objEmail = new Email();
+        }
+    }
+
+    obj = new Ecommerce();
+    console.log(obj);
+    obj.objSMS.sendSMS();
+</script>
