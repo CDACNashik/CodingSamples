@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- 
+    JSX stands for “JavaScript XML,” and 
+    it is a syntax extension to JavaScript based in ES6, 
+    the newest “version” of JavaScript. 
+    
+    JSX allows you to write HTML in React by converting HTML into React components, helping you to more easily create user interfaces for your web applications. 
+-->
+
+    <div id="main"></div>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- babel compiler -->
+
+    <script type="text/babel">
+        function Username(props){
+            console.log(props); //{x:tejas,y:20} props or properties
+
+            // props.x = "Akshay"; //props are in read only format
+            return(
+                <div className="container">
+                    <h1>Hello , {props.x}</h1>
+                    <h1>Hello , {props.y}</h1>
+                </div>
+            )
+        }
+        //pass data in component & receive it using props (properties)
+        ReactDOM.render(<Username x="tejas" y="20" /> ,document.getElementById("main") );
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

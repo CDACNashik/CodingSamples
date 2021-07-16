@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    JSX stands for “JavaScript XML,” and 
+    it is a syntax extension to JavaScript based in ES6, 
+    the newest “version” of JavaScript. 
+    
+    JSX allows you to write HTML in React by converting HTML into React components, helping you to more easily create user interfaces for your web applications. 
+-->
+
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- babel compiler -->
+
+    <script type="text/babel">
+        var userName = "Akshay";
+        var role = function() { 
+            return "Developer";
+        }
+        var userinfo = {location:"Nashik"}
+        var divTag = (
+
+            <div>
+                <h1> test , {userName} </h1>
+                <h2> test , {role()} </h2>
+                <h2> hello world , {userinfo.location} </h2>
+            </div>
+        )
+
+        ReactDOM.render(divTag , document.getElementById("root"))
+    </script>
+</body>
+</html>

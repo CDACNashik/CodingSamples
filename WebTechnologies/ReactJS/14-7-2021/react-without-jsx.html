@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    JSX stands for “JavaScript XML,” and 
+    it is a syntax extension to JavaScript based in ES6, 
+    the newest “version” of JavaScript. 
+    
+    JSX allows you to write HTML in React by converting HTML into React components, helping you to more easily create user interfaces for your web applications. 
+-->
+
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+    <script type="text/javascript">
+        var h1Tag = React.createElement("h1",null , "This is h1 tag");
+        var h2Tag = React.createElement("h2",{className:"test"} , "This is h2 tag");
+        var divTag = React.createElement("div",{} ,"data for div", h1Tag,h2Tag);
+       ReactDOM.render(divTag, document.getElementById("root"))
+    </script>
+</body>
+</html>
