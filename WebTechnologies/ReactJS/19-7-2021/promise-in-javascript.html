@@ -1,0 +1,22 @@
+<script>
+    // i will bring something for my friend - (pending) fullfilled or rejection
+    // i am fetching data from API - (pending) - fullfilled or rejected
+
+    var record = new Promise((res,rej)=>{
+        res("yes its done");
+        // rej("Fail");
+    });
+    console.log(typeof record);
+    console.log(record);
+
+    record
+    .then((result)=>{
+        console.log(result)
+    })
+    .catch((error)=>{
+        console.log(error);
+    })
+    .finally(()=>{
+        console.log("Promise Completed");
+    })
+</script>

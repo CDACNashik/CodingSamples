@@ -1,0 +1,19 @@
+<script>
+    // ...xyz -- rest parameter in js
+    // var myvar = (...xyz)=>{
+    //     console.log(xyz)
+    // }
+
+    var myvar = (a,b,c)=>{
+        console.log(a);
+        console.log(b);
+        console.log(c);
+    }
+    console.log(typeof myvar);
+
+    var myfunc = rec=>console.log(rec);
+    
+</script>
+
+<button onclick="myvar(10,20,30)">ENTER</button>
+<button onclick="myfunc(100)">ENTER</button>

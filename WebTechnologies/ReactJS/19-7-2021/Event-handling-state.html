@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- 
+    JSX stands for “JavaScript XML,” and 
+    it is a syntax extension to JavaScript based in ES6, 
+    the newest “version” of JavaScript. 
+    
+    JSX allows you to write HTML in React by converting HTML into React components, helping you to more easily create user interfaces for your web applications. 
+-->
+
+    <div id="main"></div>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- babel compiler -->
+
+    <script type="text/babel">
+        //Event handling in class Component onChange Event
+        //statefull component
+        class Myclass extends React.Component{
+            constructor(){
+                super();
+                
+
+                //lets have value in state
+                this.state = {
+                    uname:"Amit",
+                    uage:20
+                };
+                console.log(this);
+
+                this.myFunc = this.myFunc.bind(this);
+                console.log("A")
+            }
+            myFunc(ev){
+                // console.log(Math.random())
+                // console.log(ev)
+                // console.log(ev.target.value);
+                // console.log(this);
+                // this.props.username = ev.target.value;
+                //this is not allowed
+
+                // this.state.uname = ev.target.value; //this procedure for changing state property is not perfect
+
+                this.setState({
+                    uname:ev.target.value
+                });
+            }
+            render(){
+                console.log("b")
+                return(
+                    <div className="container">
+                        <h1>Event in React - onChange </h1>  
+                        <input type="text" onChange={this.myFunc}  />  
+                        <p>Props Value : {this.props.username}</p>
+                        <p>State Value : {this.state.uname}</p>
+                    </div>
+                )
+            }
+        }
+        
+        ReactDOM.render(<Myclass username="Akshay" /> ,document.getElementById("main") );
+    </script>
+
+    
+
+</body>
+</html>
