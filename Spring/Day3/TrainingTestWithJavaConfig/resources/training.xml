@@ -1,1 +1,107 @@
-
+<?xml version="1.0" encoding="UTF-8" ?> 
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx" 
+ xmlns:p="http://www.springframework.org/schema/p" xmlns:c="http://www.springframework.org/schema/c" 
+ xmlns:context="http://www.springframework.org/schema/context" 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
+ http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+ 
+	<!-- <bean id="javaTrainer" class="com.met.model.JavaTrainer">
+		<property name="name" value="Ramesh"></property>
+		<property name="subjects">
+			<list>
+				<value>OOPS</value>
+				<value>JDBC</value>
+				<value>Streams</value>
+				<value>Collections</value>
+			</list>
+		</property>
+	</bean> -->
+	
+	<bean id="javaTrainer" class="com.met.model.JavaTrainer">
+		<property name="name" value="Ram"></property>
+		<property name="subjects">
+			<list>
+				<value>OOPS</value>
+				<value>JDBC</value>
+				<value>Streams</value>
+				<value>Collections</value>
+			</list>
+		</property>
+	</bean>
+ 	
+ 	
+ 	<bean id="javaTrainer2" class="com.met.model.JavaTrainer" >   <!-- primary="true" -->
+		<property name="name" value="Ramesh"></property>
+		<property name="subjects">
+			<list>
+				<value>JSP</value>
+				<value>SERVLETS</value>
+				<value>HIBERNATE</value>
+				<value>RMI</value>
+			</list>
+		</property>
+	</bean>
+ 	
+ 	
+ 	<bean id="dotNetTrainer" class="com.met.model.DotNetTrainer">
+ 		<property name="name" value="Deepak"></property>
+		<property name="subjects">
+			<list>
+				<value>REMOTING</value>
+				<value>MVC</value>
+				<value>WEBSERVICES</value>
+				<value>ASP.NET</value>
+			</list>
+		</property>
+ 	</bean>
+ 	
+ 	
+ 	<!-- <bean id="metSolutions" class="com.met.model.MetSolutions"  autowire="constructor">
+ 		<constructor-arg name="trainer" ref="javaTrainer"></constructor-arg>
+ 	</bean> -->
+ 	
+ 	
+ 	<!-- <bean id="metSolutions" class="com.met.model.MetSolutions"  autowire="byName">
+ 		<constructor-arg name="trainer" ref="javaTrainer"></constructor-arg>
+ 	</bean> -->
+ 	
+ 	<!-- For byName to work we have to create JavaTrainer bean with id="trainer" -->
+ 	
+ 	<!-- <bean id="trainer" class="com.met.model.JavaTrainer">
+		<property name="name" value="Ram"></property>
+		<property name="subjects">
+			<list>
+				<value>OOPS</value>
+				<value>JDBC</value>
+				<value>Streams</value>
+				<value>Collections</value>
+			</list>
+		</property>
+	</bean> -->
+ 	
+ 	
+ 	<!-- <bean id="trainingWorkshop" class="com.met.model.TrainingWorkshop" autowire="byType">
+ 		<property name="trainingCompany" ref="metSolutions"></property>
+ 	</bean> -->
+ 	
+ 	
+ 	<!-- <bean id="dataSource" class="DriverManagerDataSOurce">
+ 		<property name="driverName" value="OracleDriver"></property>
+ 		<property name="url" value="oracle jdbc url"></property>
+ 		<property name="userName" value="root"></property>
+ 		<property name="password" value="root"></property>
+ 	</bean> -->
+ 	
+ 	
+ 	<context:component-scan base-package="com.met.model"></context:component-scan>
+ 	
+ </beans>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
