@@ -2,21 +2,21 @@ package com.met.model;
 
 import java.util.List;
 
-public class JavaTrainer implements Trainer {
+public class DotNetTrainer implements Trainer {
 
 	private String name;
 	private List<String> subjects;
 
-	public JavaTrainer() {
+	public DotNetTrainer() {
 		
-		System.out.println("Default JavaTrainer Object created...");
+		System.out.println("Default DotNetTrainer Object created...");
 	}
 
-	public JavaTrainer(String name, List<String> subjects) {
+	public DotNetTrainer(String name, List<String> subjects) {
 		super();
 		this.name = name;
 		this.subjects = subjects;
-		System.out.println("Parameterized JavaTrainer Object created...");
+		System.out.println("Parameterized DotNetTrainer Object created...");
 	}
 	
 	public String getName() {
@@ -38,14 +38,14 @@ public class JavaTrainer implements Trainer {
 	@Override
 	public void train() {
 		
-		System.out.println(name + " is teaching on java subjects " + subjects);
+		System.out.println(name + " is teaching on DotNet subjects " + subjects);
 
 	}
 	
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return name + " is a JavaTrainer";
+		return name + " is a DotNetTrainer";
 	}
 
 }
