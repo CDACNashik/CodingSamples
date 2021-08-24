@@ -1,1 +1,52 @@
-
+<?xml version="1.0" encoding="UTF-8" ?> 
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx" 
+ xmlns:p="http://www.springframework.org/schema/p" xmlns:c="http://www.springframework.org/schema/c" 
+ xmlns:context="http://www.springframework.org/schema/context" 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
+ http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+ 	
+ 	
+ 	<!-- Employee emp = new Employee(); -->
+ 	
+ 	<bean id="emp" class="com.met.model.Employee" ></bean>			<!-- Bean scope is singleton  scope="singleton"-->
+ 	
+ 	
+ 	<!-- Employee emp2 = new Employee(); -->
+ 	
+ 	<bean id="emp2" class="com.met.model.Employee"></bean>
+ 	
+ 	<bean id="emp3" class="com.met.model.Employee" scope="prototype"></bean>
+ 	
+ 	<bean id="emp4" class="com.met.model.Employee">					<!-- (String name, String emailId) -->
+ 		<constructor-arg name="emailId" value="john@met.edu"></constructor-arg>
+ 		<constructor-arg name="name" value="John"></constructor-arg>
+ 	</bean>
+ 	
+ 	<bean id="emp5" class="com.met.model.Employee">					<!-- (String name, String emailId) -->
+ 		<constructor-arg index="1" value="jim@met.edu"></constructor-arg>
+ 		<constructor-arg index="0" value="Jim"></constructor-arg>
+ 	</bean>
+ 	
+ 	<bean id="emp6" class="com.met.model.Employee">					<!-- Default const is mandatory -->
+ 		<property name="name" value="Jack"></property>
+ 		<property name="emailId" value="jack@met.edu"></property>
+ 		<property name="designation" value="SE"></property> 		
+ 	</bean>
+ 	
+ 	<bean id="emp7" class="com.met.model.Employee">					<!-- (String name, String emailId) -->
+ 		<constructor-arg name="emailId" value="rohan@met.edu"></constructor-arg>
+ 		<constructor-arg name="name" value="Rohan"></constructor-arg>
+ 		<property name="designation" value="SSE"></property>
+ 		<property name="salary" value="25000"></property>
+ 	</bean>
+ 	
+ </beans>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
