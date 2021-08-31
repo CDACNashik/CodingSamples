@@ -1,23 +1,22 @@
 package com.met.model;
 
 import java.util.List;
-import java.util.Random;
 
-public class JavaTrainer implements Trainer {
+public class JavaDotNetTrainer {
 
 	private String name;
 	private List<String> subjects;
 
-	public JavaTrainer() {
+	public JavaDotNetTrainer() {
 		
-		System.out.println("Default JavaTrainer Object created...");
+		System.out.println("Default JavaDotNetTrainer Object created...");
 	}
 
-	public JavaTrainer(String name, List<String> subjects) {
+	public JavaDotNetTrainer(String name, List<String> subjects) {
 		super();
 		this.name = name;
 		this.subjects = subjects;
-		System.out.println("Parameterized JavaTrainer Object created...");
+		System.out.println("Parameterized JavaDotNetTrainer Object created...");
 	}
 	
 	public String getName() {
@@ -36,7 +35,6 @@ public class JavaTrainer implements Trainer {
 		this.subjects = subjects;
 	}
 
-	@Override
 	public void train() {
 		
 		//System.out.println("participants should take seats");
@@ -45,15 +43,7 @@ public class JavaTrainer implements Trainer {
 		
 		//System.out.println("participants should switch off mobile phones");
 		
-		Random random = new Random();
-		int no = random.nextInt(10);
-		
-		if(no < 5){
-			throw new RuntimeException();
-		}
-		
-		
-		System.out.println(name + " is teaching on java subjects " + subjects);			// Business logic
+		System.out.println(name + " is teaching on JavaDotNetTrainer subjects " + subjects);		// Business logic
 
 		//System.out.println("Training completed");
 		
@@ -62,7 +52,9 @@ public class JavaTrainer implements Trainer {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return name + " is a JavaTrainer";
+		return name + " is a JavaDotNetTrainer";
 	}
 
+
+	
 }
