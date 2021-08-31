@@ -1,23 +1,22 @@
 package com.met.model;
 
 import java.util.List;
-import java.util.Random;
 
-public class JavaTrainer implements Trainer {
+public final class DotNetTrainer implements Trainer {
 
 	private String name;
 	private List<String> subjects;
 
-	public JavaTrainer() {
+	public DotNetTrainer() {
 		
-		System.out.println("Default JavaTrainer Object created...");
+		System.out.println("Default DotNetTrainer Object created...");
 	}
 
-	public JavaTrainer(String name, List<String> subjects) {
+	public DotNetTrainer(String name, List<String> subjects) {
 		super();
 		this.name = name;
 		this.subjects = subjects;
-		System.out.println("Parameterized JavaTrainer Object created...");
+		System.out.println("Parameterized DotNetTrainer Object created...");
 	}
 	
 	public String getName() {
@@ -45,15 +44,7 @@ public class JavaTrainer implements Trainer {
 		
 		//System.out.println("participants should switch off mobile phones");
 		
-		Random random = new Random();
-		int no = random.nextInt(10);
-		
-		if(no < 5){
-			throw new RuntimeException();
-		}
-		
-		
-		System.out.println(name + " is teaching on java subjects " + subjects);			// Business logic
+		System.out.println(name + " is teaching on DotNet subjects " + subjects);		// Business logic
 
 		//System.out.println("Training completed");
 		
@@ -62,7 +53,7 @@ public class JavaTrainer implements Trainer {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return name + " is a JavaTrainer";
+		return name + " is a DotNetTrainer";
 	}
 
 }
